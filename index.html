@@ -1,220 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horurasu</title>
-    <link rel="icon" href="/images/logos/135672169.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="background"></div>
-    <div class="overlay"></div>
 
-    <div class="container">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Horurasu</title>
+   <link rel="icon" href="/images/logos/135672169.png" type="image/x-icon" />
+   <link rel="stylesheet" href="styles.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cascadia Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div class="background"></div>
+   <div class="overlay"></div>
+
+   <div class="container">
       <div class="profile">
-        <img
-          src="/images/perfil/1735703513622.jpg"
-          alt="Foto de Perfil"
-          class="profile-image"
-        />
-        <h1 class="profile-name">Martin Joaquin Aguilar Muñoz</h1>
-        <div class="profile-title">@HORURASU</div>
-        <p class="profile-description">
-          Ingeniero en Software | Estudiante de Maestria en MIEVEA Desarrollador
-          de Tecnologías Inmersivas | Investigador en Tecnologías Inmersivas
-        </p>
-        <div class="profile-tags">
-          <span class="tag tag-programming">Desarrollo</span>
-          <span class="tag tag-programming">Mundos Virtuales</span>
-          <span class="tag tag-teaching">Educación</span>
-          <span class="tag tag-teaching">Investigación</span>
-          <span class="tag tag-research">IA Aplicada</span>
-        </div>
+         <img src="/images/perfil/1735703513622.jpg" alt="Foto de Perfil" class="profile-image" />
+         <h1 class="profile-name">Martin Joaquin Aguilar Muñoz</h1>
+         <div class="contact-email"">
+           <a href=" mailto:martinaguilarjm@gmail.com<">martinaguilarjm@gmail.com</a>
+         </div>
+         <div class="profile-title">@HORURASU</div>
+         <p class="profile-description">
+            Ingeniero en Software | Estudiante de Maestria en MIEVEA Desarrollador
+            de Tecnologías Inmersivas | Investigador en Tecnologías Inmersivas
+         </p>
+         <br>
+         <div class="profile-tags">
+            <span class="tag tag-programming">Desarrollo</span>
+            <span class="tag tag-programming">Mundos Virtuales</span>
+            <span class="tag tag-teaching">Educación</span>
+            <span class="tag tag-teaching">Investigación</span>
+            <span class="tag tag-research">IA Aplicada</span>
+         </div>
       </div>
 
-      <div class="language-selector">
-          <button class="lang-btn active" data-lang="es" title="Español">
-            <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Español" />
-          </button>
-          <button class="lang-btn" data-lang="en" title="English">
-            <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="English" />
-          </button>
-         <button class="lang-btn" data-lang="ja" title="日本語">
-           <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jp.svg" alt="日本語" />
-         </button>
-         <button class="lang-btn" data-lang="de" title="Deutsch">
-           <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/de.svg" alt="Deutsch" />
-         </button>
-       </div>
+         <div class="language-selector" id="languageSelector">
+             <button class="lang-btn active" data-lang="es" title="Español">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Español" />
+             </button>
+             <button class="lang-btn" data-lang="en" title="English">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="English" />
+             </button>
+             <button class="lang-btn" data-lang="ja" title="日本語">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jp.svg" alt="日本語" />
+             </button>
+             <button class="lang-btn" data-lang="de" title="Deutsch">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/de.svg" alt="Deutsch" />
+             </button>
+             <button class="lang-btn" data-lang="fr" title="Français">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/fr.svg" alt="Français" />
+             </button>
+             <button class="lang-btn" data-lang="hi" title="हिन्दी">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/in.svg" alt="हिन्दी" />
+             </button>
+             <button class="lang-btn" data-lang="ru" title="Русский">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ru.svg" alt="Русский" />
+             </button>
+             <button class="lang-btn" data-lang="pt" title="Português">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="Português" />
+             </button>
+             <button class="lang-btn" data-lang="zh" title="中文">
+                 <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cn.svg" alt="中文" />
+             </button>
+         </div>
 
       <div class="links-container">
-        <a>
-          <div class="section-header social-header">
-            <h2><i class="fas fa-share-alt"></i> Redes Sociales</h2>
-          </div>
-        </a>
+         <a>
+            <div class="section-header social-header">
+               <h2><i class="fas fa-share-alt"></i> Redes Sociales</h2>
+            </div>
+         </a>
 
-        <a
-          href="https://www.linkedin.com/in/martinjoaquinaguilarmuñoz/"
-          class="link"
-          target="_blank"
-        >
-          <div class="link-image">
-            <i class="fab fa-linkedin linkedin-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">LinkedIn</div>
-            <div class="link-subtext">Perfil profesional</div>
-          </div>
-        </a>
+         <a href="https://www.linkedin.com/in/martinjoaquinaguilarmuñoz/" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-linkedin linkedin-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">LinkedIn</div>
+               <div class="link-subtext">Perfil profesional</div>
+            </div>
+         </a>
 
-        <a href="https://x.com/Horurasu" class="link" target="_blank">
-          <div class="link-image">
-            <i class="fab fa-twitter twitter-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">X - Twitter</div>
-            <div class="link-subtext">@Horurasu</div>
-          </div>
-        </a>
 
-        <a
-          href="https://www.facebook.com/people/Martin-Aguilar/pfbid02is3sjJhgZpgx2nmDyW4njKfN7Erh8iYLJmb93py7BeKKvaW2wmfg8AZ5TahmZ6Mjl/"
-          class="link"
-          target="_blank"
-        >
-          <div class="link-image">
-            <i class="fab fa-facebook facebook-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">Facebook</div>
-            <div class="link-subtext">Página oficial</div>
-          </div>
-        </a>
 
-        <a
-          href="https://www.instagram.com/horurasu/"
-          class="link"
-          target="_blank"
-        >
-          <div class="link-image">
-            <i class="fab fa-instagram instagram-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">Instagram</div>
-            <div class="link-subtext">Fotos y actualizaciones</div>
-          </div>
-        </a>
+         <a href="https://x.com/Horurasu" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-twitter twitter-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">X - Twitter</div>
+               <div class="link-subtext">@Horurasu</div>
+            </div>
+         </a>
 
-        <a
-          href="https://www.youtube.com/@Horurasu"
-          class="link"
-          target="_blank"
-        >
-          <div class="link-image">
-            <i class="fab fa-youtube youtube-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">YouTube</div>
-            <div class="link-subtext">@Horurasu</div>
-          </div>
-        </a>
+         <a href="https://www.facebook.com/people/Martin-Aguilar/pfbid02is3sjJhgZpgx2nmDyW4njKfN7Erh8iYLJmb93py7BeKKvaW2wmfg8AZ5TahmZ6Mjl/"
+            class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-facebook facebook-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">Facebook</div>
+               <div class="link-subtext">Página oficial</div>
+            </div>
+         </a>
 
-        <a>
-          <div class="section-header programming-header">
-            <h2><i class="fas fa-code"></i> Programación</h2>
-          </div>
-        </a>
+         <a href="https://www.instagram.com/horurasu/" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-instagram instagram-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">Instagram</div>
+               <div class="link-subtext">Fotos y actualizaciones</div>
+            </div>
+         </a>
 
-        <a href="https://github.com/Horurasu" class="link" target="_blank">
-          <div class="link-image">
-            <i class="fab fa-github github-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">Github</div>
-            <div class="link-subtext">@Horurasu</div>
-          </div>
-        </a>
+         <a href="https://www.youtube.com/@Horurasu" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-youtube youtube-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">YouTube</div>
+               <div class="link-subtext">@Horurasu</div>
+            </div>
+         </a>
 
-        <a>
-          <div class="section-header research-header">
-            <h2><i class="fas fa-flask"></i> Investigación</h2>
-          </div>
-        </a>
+         <a>
+            <div class="section-header programming-header">
+               <h2><i class="fas fa-code"></i> Programación</h2>
+            </div>
+         </a>
 
-        <a
-          href="https://www.researchgate.net/profile/Martin-Aguilar-Munoz"
-          class="link"
-          target="_blank"
-        >
-          <div class="link-image">
-            <i class="fab fa-researchgate researchgate-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">ResearchGate</div>
-            <div class="link-subtext">Publicaciones académicas</div>
-          </div>
-        </a>
+         <a href="https://github.com/Horurasu" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-github github-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">Github</div>
+               <div class="link-subtext">@Horurasu</div>
+            </div>
+         </a>
 
-        <a
-          href="https://scholar.google.es/citations?user=bMT2LS4AAAAJ&hl=es&authuser=1"
-          class="link"
-          target="_blank"
-        >
-          <div class="link-image">
-            <i class="fab fa-google google-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">Google Académico</div>
-            <div class="link-subtext">Citas y artículos</div>
-          </div>
-        </a>
+         <a>
+            <div class="section-header research-header">
+               <h2><i class="fas fa-flask"></i> Investigación</h2>
+            </div>
+         </a>
 
-        <a
-          href="https://upsrj.academia.edu/MartínJoaquínAguilarMuñoz"
-          class="link"
-          target="_blank"
-        >
-          <div class="link-image academia-icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div>
-            <div class="link-text">Academia.edu</div>
-            <div class="link-subtext">Perfil académico</div>
-          </div>
-        </a>
+         <a href="https://www.researchgate.net/profile/Martin-Aguilar-Munoz" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-researchgate researchgate-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">ResearchGate</div>
+               <div class="link-subtext">Publicaciones académicas</div>
+            </div>
+         </a>
 
-        <a
-          href="https://orcid.org/0009-0003-5618-2261"
-          class="link"
-          target="_blank"
-        >
-          <div class="link-image">
-            <i class="fas fa-id-badge orcid-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">ORCID</div>
-            <div class="link-subtext">0009-0003-5618-2261</div>
-          </div>
-        </a>
+         <a href="https://scholar.google.es/citations?user=bMT2LS4AAAAJ&hl=es&authuser=1" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-google google-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">Google Académico</div>
+               <div class="link-subtext">Citas y artículos</div>
+            </div>
+         </a>
+
+         <a href="https://upsrj.academia.edu/MartínJoaquínAguilarMuñoz" class="link" target="_blank">
+            <div class="link-image academia-icon">
+               <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div>
+               <div class="link-text">Academia.edu</div>
+               <div class="link-subtext">Perfil académico</div>
+            </div>
+         </a>
+
+         <a href="https://orcid.org/0009-0003-5618-2261" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fas fa-id-badge orcid-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">ORCID</div>
+               <div class="link-subtext">0009-0003-5618-2261</div>
+            </div>
+         </a>
       </div>
 
       <script src="script.js"></script>
-      <script src="language-switcher.js"></script> 
+      <script src="language-switcher.js"></script>
 
       <div class="footer">
-        <p>
-          Gracias por visitar mi página personal. Si deseas contactarme para
-          colaboraciones, proyectos o cualquier consulta, no dudes en hacerlo a
-          través de mis redes sociales.
-        </p>
-        <p>&copy; <span id="current-year">2025</span> - <a href="https://github.com/Horurasu" target="_blank">Horurasu</a></p>
+         <p>
+            Gracias por visitar mi página personal. Si deseas contactarme para
+            colaboraciones, proyectos o cualquier consulta, no dudes en hacerlo.
+         </p>
+         <p>&copy; <span id="current-year">2025</span> - <a href="https://github.com/Horurasu"
+               target="_blank">Horurasu</a></p>
       </div>
-    </div>
-  </body>
+   </div>
+</body>
+
 </html>
