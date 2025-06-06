@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>QUIZ/MJAM/MIEVEA</title>
+   <link rel="stylesheet" href="/styles/quiz.css">
+</head>
+<body>
+   <div class="quiz-container">
+      <div class="header">
+         <h1> MARTIN JOAQUIN AGUILAR MUÑOZ</h1>
+         <h2>Creación de juego / Topico Selecto </h2>
+         <h1>🎮 Quiz: Programación en Entornos Virtuales</h1>
+         <p>Descubre cómo la tecnología inmersiva está transformando el aprendizaje de programación</p>
+         <p>Responde las preguntas y acumula puntos para subir de nivel</p>
+         <p>¡Usa las pistas sabiamente!</p>
+      </div>
+
+      <div class="stats">
+         <div class="stat">
+            <div class="stat-value" id="score">0</div>
+            <div>Puntos</div>
+         </div>
+         <div class="stat">
+            <div class="stat-value" id="streak">0</div>
+            <div>Racha</div>
+         </div>
+         <div class="stat">
+            <div class="stat-value" id="level">1</div>
+            <div>Nivel</div>
+         </div>
+      </div>
+
+      <div class="progress-bar">
+         <div class="progress-fill" id="progress"></div>
+      </div>
+
+      <div id="quiz-content">
+         <div class="question-card">
+            <div class="question-number" id="question-number">Pregunta 1 de 10</div>
+            <div class="question-text" id="question-text"></div>
+            <div class="answers" id="answers"></div>
+            <div class="feedback hidden" id="feedback"></div>
+         </div>
+
+         <div class="controls">
+            <button class="btn" id="hint-btn">💡 Pista (10 pts)</button>
+            <div>
+               <button class="btn" id="check-btn" onclick="checkAnswer()">✅ Comprobar respuesta</button>
+               <button style="display: none;" class="btn" id="prev-btn" disabled>← Anterior</button>
+               <button class="btn" id="next-btn" disabled>Siguiente →</button>
+            </div>
+         </div>
+      </div>
+
+      <div id="results" class="results hidden">
+         <h2>🎉 ¡Excelente trabajo!</h2>
+         <div class="score-circle">
+            <div class="score-inner" id="final-score">0%</div>
+         </div>
+         <div id="achievement"></div>
+         <p id="performance-message"></p>
+         <button class="btn" onclick="restartQuiz()">🔄 Intentar de nuevo</button>
+      </div>
+   </div>
+   <script src="/src/quiz.js"></script>
+</body>
+</html>
