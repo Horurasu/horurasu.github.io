@@ -16,16 +16,22 @@
     padding: 0;
     box-sizing: border-box;
  }
-
- body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, var(--background) 0%, #e0e7ef 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary);
- }
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(135deg, var(--background) 0%, #e0e7ef 100%);
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--primary);
+   background-image: 
+      linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+      url('/assets/background/skybackground.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   backdrop-filter: blur(6px);
+}
 
  .quiz-container {
     background: var(--card-bg);
