@@ -4,17 +4,19 @@ const translations = {
      tags: ["Desarrollo", "Mundos Virtuales", "Educación", "Investigación", "IA Aplicada"],
      socialMedia: "Redes Sociales",
      linkedinSubtext: "Perfil profesional",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Página oficial",
      instagramSubtext: "Fotos y actualizaciones",
      youtubeSubtext: "@Horurasu",
      programming: "Programación",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "Preguntas y respuestas",
      research: "Investigación",
      researchgateSubtext: "Publicaciones académicas",
      googleScholarSubtext: "Citas y artículos",
      academiaSubtext: "Perfil académico",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "Revistas científicas japonesas",
      footerMessage: "Gracias por visitar mi página personal. Si deseas contactarme para colaboraciones, proyectos o cualquier consulta, no dudes en hacerlo."
    },
    en: {
@@ -22,17 +24,19 @@ const translations = {
      tags: ["Development", "Virtual Worlds", "Education", "Research", "Applied AI"],
      socialMedia: "Social Media",
      linkedinSubtext: "Professional profile",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Official page",
      instagramSubtext: "Photos and updates",
      youtubeSubtext: "@Horurasu",
      programming: "Programming",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "Questions and answers",
      research: "Research",
      researchgateSubtext: "Academic publications",
      googleScholarSubtext: "Citations and articles",
      academiaSubtext: "Academic profile",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "Japanese scientific journals",
      footerMessage: "Thank you for visiting my personal page. If you would like to contact me for collaborations, projects, or any inquiries, please feel free to do so."
    },
    ja: {
@@ -40,17 +44,19 @@ const translations = {
      tags: ["開発", "バーチャルワールド", "教育", "研究", "応用AI"],
      socialMedia: "ソーシャルメディア",
      linkedinSubtext: "プロフェッショナルプロフィール",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "公式ページ",
      instagramSubtext: "写真とアップデート",
      youtubeSubtext: "@Horurasu",
      programming: "プログラミング",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "質問と回答",
      research: "研究",
      researchgateSubtext: "学術出版物",
      googleScholarSubtext: "引用と記事",
      academiaSubtext: "学術プロフィール",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "日本の科学雑誌",
      footerMessage: "私の個人ページを訪問していただきありがとうございます。コラボレーション、プロジェクト、または質問がある場合は、遠慮なくご連絡ください。"
    },
    de: {
@@ -58,17 +64,19 @@ const translations = {
      tags: ["Entwicklung", "Virtuelle Welten", "Bildung", "Forschung", "Angewandte KI"],
      socialMedia: "Soziale Medien",
      linkedinSubtext: "Berufliches Profil",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Offizielle Seite",
      instagramSubtext: "Fotos und Updates",
      youtubeSubtext: "@Horurasu",
      programming: "Programmierung",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "Fragen und Antworten",
      research: "Forschung",
      researchgateSubtext: "Akademische Publikationen",
      googleScholarSubtext: "Zitate und Artikel",
      academiaSubtext: "Akademisches Profil",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "Japanische Wissenschaftsmagazine",
      footerMessage: "Vielen Dank für Ihren Besuch auf meiner persönlichen Seite. Wenn Sie mich wegen Kooperationen, Projekten oder Anfragen kontaktieren möchten, zögern Sie bitte nicht, dies zu tun."
    },
    fr: {
@@ -76,17 +84,19 @@ const translations = {
      tags: ["Développement", "Mondes virtuels", "Éducation", "Recherche", "IA appliquée"],
      socialMedia: "Réseaux sociaux",
      linkedinSubtext: "Profil professionnel",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Page officielle",
      instagramSubtext: "Photos et mises à jour",
      youtubeSubtext: "@Horurasu",
      programming: "Programmation",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "Questions et réponses",
      research: "Recherche",
      researchgateSubtext: "Publications académiques",
      googleScholarSubtext: "Citations et articles",
      academiaSubtext: "Profil académique",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "Revues scientifiques japonaises",
      footerMessage: "Merci de visiter ma page personnelle. Si vous souhaitez me contacter pour des collaborations, des projets ou toute question, n'hésitez pas à le faire."
    },
    hi: {
@@ -94,17 +104,19 @@ const translations = {
      tags: ["विकास", "आभासी दुनिया", "शिक्षा", "अनुसंधान", "लागू एआई"],
      socialMedia: "सोशल मीडिया",
      linkedinSubtext: "पेशेवर प्रोफ़ाइल",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "आधिकारिक पृष्ठ",
      instagramSubtext: "फोटो और अपडेट",
      youtubeSubtext: "@Horurasu",
      programming: "प्रोग्रामिंग",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "प्रश्न और उत्तर",
      research: "अनुसंधान",
      researchgateSubtext: "शैक्षणिक प्रकाशन",
      googleScholarSubtext: "उद्धरण और लेख",
      academiaSubtext: "शैक्षणिक प्रोफ़ाइल",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "जापानी वैज्ञानिक पत्रिकाएँ",
      footerMessage: "मेरे व्यक्तिगत पृष्ठ पर आने के लिए धन्यवाद। यदि आप सहयोग, परियोजनाओं या किसी भी प्रश्न के लिए मुझसे संपर्क करना चाहते हैं, तो कृपया बेझिझक करें।"
    },
    ru: {
@@ -112,17 +124,19 @@ const translations = {
      tags: ["Разработка", "Виртуальные миры", "Образование", "Исследования", "Прикладной ИИ"],
      socialMedia: "Социальные сети",
      linkedinSubtext: "Профессиональный профиль",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Официальная страница",
      instagramSubtext: "Фотографии и обновления",
      youtubeSubtext: "@Horurasu",
      programming: "Программирование",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "Вопросы и ответы",
      research: "Исследования",
      researchgateSubtext: "Академические публикации",
      googleScholarSubtext: "Цитаты и статьи",
      academiaSubtext: "Академический профиль",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "Японские научные журналы",
      footerMessage: "Спасибо за посещение моей личной страницы. Если вы хотите связаться со мной для сотрудничества, проектов или любых вопросов, пожалуйста, не стесняйтесь это сделать."
    },
    pt: {
@@ -130,17 +144,19 @@ const translations = {
      tags: ["Desenvolvimento", "Mundos Virtuais", "Educação", "Pesquisa", "IA Aplicada"],
      socialMedia: "Redes Sociais",
      linkedinSubtext: "Perfil profissional",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Página oficial",
      instagramSubtext: "Fotos e atualizações",
      youtubeSubtext: "@Horurasu",
      programming: "Programação",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "Perguntas e respostas",
      research: "Pesquisa",
      researchgateSubtext: "Publicações acadêmicas",
      googleScholarSubtext: "Citações e artigos",
      academiaSubtext: "Perfil acadêmico",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "Revistas científicas japonesas",
      footerMessage: "Obrigado por visitar minha página pessoal. Se você deseja entrar em contato comigo para colaborações, projetos ou qualquer dúvida, fique à vontade para fazê-lo."
    },
    zh: {
@@ -148,17 +164,19 @@ const translations = {
      tags: ["开发", "虚拟世界", "教育", "研究", "应用人工智能"],
      socialMedia: "社交媒体",
      linkedinSubtext: "专业档案",
-     twitterSubtext: "@Horurasu",
+     twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "官方页面",
      instagramSubtext: "照片和更新",
      youtubeSubtext: "@Horurasu",
      programming: "编程",
      githubSubtext: "@Horurasu",
+     stackoverflowSubtext: "问题和答案",
      research: "研究",
      researchgateSubtext: "学术出版物",
      googleScholarSubtext: "引用和文章",
      academiaSubtext: "学术档案",
      orcidSubtext: "0009-0003-5618-2261",
+     jstageSubtext: "日本科学期刊",
      footerMessage: "感谢您访问我的个人页面。如果您想联系我进行合作、项目或任何咨询，请随时与我联系。"
    }
  };
@@ -186,11 +204,13 @@ const translations = {
    linkSubtexts[3].textContent = translations[lang].instagramSubtext;
    linkSubtexts[4].textContent = translations[lang].youtubeSubtext;
    linkSubtexts[5].textContent = translations[lang].githubSubtext;
-   linkSubtexts[6].textContent = translations[lang].researchgateSubtext;
-   linkSubtexts[7].textContent = translations[lang].googleScholarSubtext;
-   linkSubtexts[8].textContent = translations[lang].academiaSubtext;
-   linkSubtexts[9].textContent = translations[lang].orcidSubtext;
-   
+   linkSubtexts[6].textContent = translations[lang].stackoverflowSubtext;
+   linkSubtexts[7].textContent = translations[lang].researchgateSubtext;
+   linkSubtexts[8].textContent = translations[lang].googleScholarSubtext;
+   linkSubtexts[9].textContent = translations[lang].academiaSubtext;
+   linkSubtexts[10].textContent = translations[lang].orcidSubtext;
+   linkSubtexts[11].textContent = translations[lang].jstageSubtext;
+
    document.querySelector('.footer p:first-child').textContent = translations[lang].footerMessage;
    
    localStorage.setItem('preferredLanguage', lang);
