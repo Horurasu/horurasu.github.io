@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tecnología Educativa · Sitio Web Educativo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1a1209;
+  --green:#1d4a3a;
+  --green2:#2d6a55;
+  --cream:#f7f2e8;
+  --amber:#d4882a;
+  --amber2:#f0a93a;
+  --warm:#fff8ee;
+  --muted:#7a6e5f;
+  --include:#b34a00;
+  --include2:#e86b1a;
+  --white:#ffffff;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7}
+
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(29,74,58,.97);
+  backdrop-filter:blur(8px);
+  padding:.7rem 2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  box-shadow:0 2px 20px rgba(0,0,0,.25);
+}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--amber2);letter-spacing:.03em}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.82rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--amber2)}
+
+/* HERO */
+.hero{
+  min-height:92vh;
+  background:var(--green);
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:5rem 2rem 4rem;
+  position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 20% 80%, rgba(212,136,42,.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 15%, rgba(45,106,85,.6) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, transparent, transparent 60px, rgba(255,255,255,.018) 60px, rgba(255,255,255,.018) 61px);
+}
+.hero-inner{position:relative;z-index:1;max-width:760px}
+.hero-badge{
+  display:inline-block;background:rgba(212,136,42,.2);border:1px solid rgba(212,136,42,.4);
+  color:var(--amber2);font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  padding:.4rem 1.1rem;border-radius:99px;margin-bottom:2rem;
+}
+.hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.8rem,7vw,5.2rem);
+  font-weight:700;line-height:1.05;
+  color:var(--white);margin-bottom:1.5rem;
+}
+.hero h1 em{color:var(--amber2);font-style:italic}
+.hero-sub{
+  font-size:1.1rem;color:rgba(255,255,255,.72);max-width:560px;margin:0 auto 2.5rem;
+  font-weight:300;line-height:1.8;
+}
+.hero-quote{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:1.2rem;color:rgba(255,255,255,.5);
+  border-left:2px solid var(--amber);padding-left:1.2rem;text-align:left;
+  max-width:500px;margin:0 auto;
+}
+.hero-quote cite{display:block;font-style:normal;font-size:.8rem;font-family:'DM Sans',sans-serif;margin-top:.5rem;color:rgba(255,255,255,.4)}
+.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.35);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+
+/* SECTIONS */
+section{padding:5rem 2rem}
+.container{max-width:860px;margin:0 auto}
+.sec-badge{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--green2);background:rgba(29,74,58,.1);padding:.3rem .9rem;border-radius:99px;margin-bottom:.8rem}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,2.8rem);font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:1.2rem}
+.sec-intro{font-size:1.05rem;color:var(--muted);max-width:640px;line-height:1.8;margin-bottom:2.5rem}
+
+/* DEFINICIÓN — comparación */
+.def-section{background:var(--warm)}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem}
+.compare-card{border-radius:14px;padding:1.8rem;position:relative;overflow:hidden}
+.compare-card.wrong{background:#fff0f0;border:1.5px solid #f5c6c6}
+.compare-card.right{background:#f0f7f4;border:1.5px solid #a8d4c4}
+.compare-card .badge{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.8rem;display:flex;align-items:center;gap:.4rem}
+.compare-card.wrong .badge{color:#c0392b}
+.compare-card.right .badge{color:var(--green2)}
+.compare-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;margin-bottom:.6rem;color:var(--ink)}
+.compare-card p{font-size:.92rem;color:var(--muted);line-height:1.7}
+.compare-card .icon{font-size:1.8rem;margin-bottom:.6rem}
+
+/* BIG DEFINITION */
+.big-def{
+  background:var(--green);color:var(--white);
+  border-radius:16px;padding:2.5rem 2.8rem;margin-bottom:2rem;
+  position:relative;overflow:hidden;
+}
+.big-def::before{content:'';position:absolute;top:-30px;right:-30px;width:160px;height:160px;border-radius:50%;background:rgba(212,136,42,.15)}
+.big-def blockquote{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-style:italic;line-height:1.6;color:rgba(255,255,255,.92);position:relative;z-index:1}
+.big-def blockquote strong{color:var(--amber2);font-style:normal}
+.big-def cite{display:block;margin-top:.9rem;font-family:'DM Sans',sans-serif;font-style:normal;font-size:.8rem;color:rgba(255,255,255,.5);position:relative;z-index:1}
+
+/* COMPONENTES — tabs */
+.tabs-wrap{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07)}
+.tab-btns{display:flex;border-bottom:1px solid rgba(0,0,0,.08)}
+.tab-btn{
+  flex:1;padding:.9rem .5rem;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600;
+  letter-spacing:.04em;text-transform:uppercase;background:none;border:none;cursor:pointer;
+  color:var(--muted);transition:all .2s;border-bottom:3px solid transparent;
+}
+.tab-btn.active{color:var(--green2);border-bottom-color:var(--green2);background:#f7fbf9}
+.tab-panel{display:none;padding:2rem 2.2rem}
+.tab-panel.active{display:block;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.tab-panel h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--green);margin-bottom:.7rem}
+.tab-panel p{font-size:.97rem;color:#3a3228;line-height:1.8;margin-bottom:.8rem}
+.tab-panel .example-tag{display:inline-block;background:rgba(29,74,58,.1);color:var(--green2);font-size:.75rem;font-weight:600;padding:.25rem .7rem;border-radius:99px;margin:.2rem}
+
+/* DIFERENCIA — accordion */
+.acc-section{background:var(--green);color:var(--white)}
+.acc-section .sec-badge{color:var(--amber2);background:rgba(212,136,42,.15)}
+.acc-section .sec-title{color:var(--white)}
+.acc-section .sec-intro{color:rgba(255,255,255,.65)}
+.accordion{border-radius:12px;overflow:hidden}
+.acc-item{border-bottom:1px solid rgba(255,255,255,.12)}
+.acc-item:last-child{border-bottom:none}
+.acc-trigger{
+  width:100%;background:rgba(255,255,255,.06);border:none;
+  padding:1.1rem 1.4rem;display:flex;align-items:center;justify-content:space-between;
+  cursor:pointer;transition:background .2s;
+  font-family:'DM Sans',sans-serif;font-size:.97rem;font-weight:600;color:var(--white);text-align:left;
+}
+.acc-trigger:hover{background:rgba(255,255,255,.1)}
+.acc-trigger .arrow{font-size:1.1rem;transition:transform .3s;color:var(--amber2)}
+.acc-trigger.open .arrow{transform:rotate(180deg)}
+.acc-body{display:none;padding:0 1.4rem 1.3rem;font-size:.93rem;color:rgba(255,255,255,.72);line-height:1.8}
+.acc-body.open{display:block;animation:fadeUp .3s ease}
+
+/* EJEMPLOS — tarjetas */
+.examples-section{background:#faf6ef}
+.examples-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+.ex-card{
+  background:var(--white);border-radius:14px;padding:1.6rem;
+  border-top:4px solid var(--green2);
+  box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s;
+}
+.ex-card:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(0,0,0,.11)}
+.ex-icon{font-size:2rem;margin-bottom:.8rem}
+.ex-card h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:var(--green);margin-bottom:.5rem}
+.ex-card p{font-size:.88rem;color:var(--muted);line-height:1.7}
+
+/* INCLUSIÓN — protagonista */
+.inc-section{
+  background:linear-gradient(135deg,#3d1400 0%,#7a2d00 45%,#c45200 100%);
+  color:var(--white);position:relative;overflow:hidden;
+}
+.inc-section::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 10% 90%, rgba(255,255,255,.06) 0%, transparent 40%),
+    radial-gradient(ellipse at 90% 10%, rgba(255,200,100,.12) 0%, transparent 40%),
+    repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(255,255,255,.02) 40px, rgba(255,255,255,.02) 41px);
+}
+.inc-inner{position:relative;z-index:1}
+.inc-section .sec-badge{color:#ffb87a;background:rgba(255,150,80,.2);border:1px solid rgba(255,150,80,.3)}
+.inc-section .sec-title{color:var(--white)}
+.inc-section .sec-intro{color:rgba(255,255,255,.7)}
+.inc-hero-text{
+  font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);
+  font-style:italic;font-weight:600;color:rgba(255,255,255,.9);
+  line-height:1.4;margin-bottom:2.5rem;
+  border-left:3px solid #ff9040;padding-left:1.5rem;
+}
+.inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-bottom:2.5rem}
+.inc-card{
+  background:rgba(255,255,255,.1);backdrop-filter:blur(6px);
+  border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:1.5rem;
+  transition:background .2s,transform .2s;
+}
+.inc-card:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
+.inc-card .ic-icon{font-size:2rem;margin-bottom:.7rem}
+.inc-card h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--white);margin-bottom:.5rem}
+.inc-card p{font-size:.85rem;color:rgba(255,255,255,.72);line-height:1.7}
+.inc-principles{background:rgba(0,0,0,.25);border-radius:14px;padding:1.8rem 2rem}
+.inc-principles h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:#ffb87a;margin-bottom:1.1rem}
+.principle{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem}
+.principle:last-child{margin-bottom:0}
+.p-num{min-width:2rem;height:2rem;background:#ff9040;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:var(--white);flex-shrink:0;margin-top:.15rem}
+.principle p{font-size:.9rem;color:rgba(255,255,255,.8);line-height:1.7}
+.principle strong{color:#ffb87a}
+
+/* QUIZ */
+.quiz-section{background:var(--warm)}
+.quiz-box{background:var(--white);border-radius:16px;padding:2.5rem;box-shadow:0 4px 24px rgba(0,0,0,.07)}
+.quiz-box h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--green);margin-bottom:.4rem}
+.quiz-box .qdesc{font-size:.9rem;color:var(--muted);margin-bottom:2rem}
+.qitem{margin-bottom:1.8rem;padding-bottom:1.8rem;border-bottom:1px solid rgba(0,0,0,.07)}
+.qitem:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.qitem p{font-size:.97rem;font-weight:600;color:var(--ink);margin-bottom:.8rem}
+.qopts{display:flex;flex-direction:column;gap:.45rem}
+.qopts label{
+  display:flex;align-items:center;gap:.7rem;
+  padding:.55rem .85rem;border:1.5px solid #e0dbd1;border-radius:8px;
+  font-size:.92rem;cursor:pointer;transition:all .2s;background:var(--cream);
+}
+.qopts label:hover{border-color:var(--green2);background:#f0f7f4}
+.qopts input{accent-color:var(--green2);flex-shrink:0}
+.qopts label.selected{border-color:var(--green2);background:#e8f5ef}
+.quiz-result{display:none;margin-top:1.5rem;padding:1.2rem 1.4rem;border-radius:10px;font-size:.93rem;line-height:1.7}
+.quiz-result.show{display:block;animation:fadeUp .3s ease}
+.quiz-result.ok{background:#e8f5ef;border-left:3px solid var(--green2);color:#1d4a3a}
+.quiz-result.info{background:#fff4e6;border-left:3px solid var(--amber);color:#7a4800}
+.quiz-btn{
+  display:block;margin:2rem auto 0;background:var(--green);color:#fff;
+  font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:600;
+  padding:.85rem 2.4rem;border-radius:50px;border:none;cursor:pointer;
+  transition:background .2s,transform .15s;
+}
+.quiz-btn:hover{background:var(--green2);transform:translateY(-2px)}
+.progress-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem}
+.progress-row span{font-size:.8rem;color:var(--muted)}
+.prog-bar{height:4px;background:#e0dbd1;border-radius:99px;flex:1;margin:0 1rem}
+.prog-fill{height:100%;background:var(--green2);border-radius:99px;width:0%;transition:width .4s ease}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,.4);text-align:center;padding:2.5rem 2rem;font-size:.8rem}
+footer strong{color:rgba(255,255,255,.75)}
+.footer-refs{max-width:640px;margin:.8rem auto 0;font-size:.75rem;color:rgba(255,255,255,.3);text-align:left;line-height:1.9}
+
+@media(max-width:640px){
+  .compare-grid{grid-template-columns:1fr}
+  .tab-btn{font-size:.7rem;padding:.8rem .3rem}
+  nav{padding:.7rem 1rem}
+  .nav-links{gap:.8rem}
+  .big-def{padding:1.8rem}
+  .inc-principles{padding:1.3rem}
+  .quiz-box{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">Tecnología Educativa</span>
+  <ul class="nav-links">
+    <li><a href="#que-es">¿Qué es?</a></li>
+    <li><a href="#componentes">Componentes</a></li>
+    <li><a href="#diferencia">Diferencia</a></li>
+    <li><a href="#ejemplos">Ejemplos</a></li>
+    <li><a href="#inclusion">Inclusión</a></li>
+    <li><a href="#reflexion">Reflexión</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">Recurso educativo interactivo</div>
+    <h1>La <em>Tecnología Educativa</em><br/>no es usar tecnología.</h1>
+    <p class="hero-sub">Es diseñar experiencias de aprendizaje donde la tecnología, la pedagogía y la intención formativa trabajan juntas con propósito.</p>
+    <blockquote class="hero-quote">
+      "La tecnología educativa es el diseño intencional de procesos de enseñanza-aprendizaje mediados por tecnología."
+      <cite>— Cabero Almenara, 2007</cite>
+    </blockquote>
+  </div>
+  <div class="scroll-hint">↓ explorar</div>
+</header>
+
+<!-- ¿QUÉ ES? -->
+<section id="que-es" class="def-section">
+  <div class="container">
+    <span class="sec-badge">Concepto central</span>
+    <h2 class="sec-title">¿Qué es la Tecnología Educativa?</h2>
+    <p class="sec-intro">Antes de definirla, vale la pena distinguirla de algo con lo que se confunde constantemente.</p>
+
+    <div class="compare-grid">
+      <div class="compare-card wrong">
+        <div class="icon">❌</div>
+        <div class="badge">✗ Uso instrumental de tecnología</div>
+        <h3>Usar tecnología en el aula</h3>
+        <p>Un proyector, una tablet, un video de YouTube. La tecnología está ahí, pero nadie pensó en cómo aprende el estudiante ni qué hará con esa información.</p>
+      </div>
+      <div class="compare-card right">
+        <div class="icon">✅</div>
+        <div class="badge">✓ Tecnología Educativa</div>
+        <h3>Diseñar el aprendizaje con tecnología</h3>
+        <p>La herramienta se eligió porque favorece una estrategia pedagógica específica, con objetivos claros, evaluación formativa y atención a la diversidad del grupo.</p>
+      </div>
+    </div>
+
+    <div class="big-def">
+      <blockquote>
+        La Tecnología Educativa es la <strong>integración intencional de tecnología, pedagogía y estrategias didácticas</strong> orientada a transformar y mejorar los procesos de enseñanza-aprendizaje, con atención al contexto, la diversidad y los fines educativos.
+      </blockquote>
+      <cite>Basado en Cabero Almenara (2007) y Area Moreira (2009)</cite>
+    </div>
+  </div>
+</section>
+
+<!-- COMPONENTES -->
+<section id="componentes" style="background:var(--cream)">
+  <div class="container">
+    <span class="sec-badge">Anatomía del concepto</span>
+    <h2 class="sec-title">Sus cinco componentes clave</h2>
+    <p class="sec-intro">La Tecnología Educativa no descansa en un solo pilar. Explora cada dimensión.</p>
+
+    <div class="tabs-wrap">
+      <div class="tab-btns">
+        <button class="tab-btn active" onclick="openTab(this,'t1')">Pedagógico</button>
+        <button class="tab-btn" onclick="openTab(this,'t2')">Didáctico</button>
+        <button class="tab-btn" onclick="openTab(this,'t3')">Tecnológico</button>
+        <button class="tab-btn" onclick="openTab(this,'t4')">Ético</button>
+        <button class="tab-btn" onclick="openTab(this,'t5')">Social</button>
+      </div>
+
+      <div id="t1" class="tab-panel active">
+        <h3>🎓 Componente Pedagógico</h3>
+        <p>La pedagogía responde <em>cómo aprenden las personas</em>. En la Tecnología Educativa, la tecnología se subordina a la teoría del aprendizaje: constructivismo, aprendizaje situado, aprendizaje activo. Ninguna herramienta se elige al azar; cada una tiene un fundamento en cómo potencia la comprensión del estudiante.</p>
+        <p><strong>Pregunta clave:</strong> ¿Esta tecnología favorece el aprendizaje activo o solo transmite información?</p>
+        <span class="example-tag">Constructivismo</span><span class="example-tag">Aprendizaje situado</span><span class="example-tag">Evaluación formativa</span>
+      </div>
+
+      <div id="t2" class="tab-panel">
+        <h3>📐 Componente Didáctico</h3>
+        <p>La didáctica se ocupa del <em>diseño de la enseñanza</em>: objetivos, secuencias, actividades y evaluación. Una buena aplicación de Tecnología Educativa tiene estructura: apertura, desarrollo, cierre, retroalimentación. No basta encender una pantalla; hay que diseñar qué hace el estudiante antes, durante y después.</p>
+        <p><strong>Pregunta clave:</strong> ¿La actividad tiene estructura, propósito y evaluación claros?</p>
+        <span class="example-tag">Diseño instruccional</span><span class="example-tag">Secuencias didácticas</span><span class="example-tag">Actividades interactivas</span>
+      </div>
+
+      <div id="t3" class="tab-panel">
+        <h3>💻 Componente Tecnológico</h3>
+        <p>La tecnología es el <em>medio</em>, no el fin. Incluye hardware (dispositivos, sensores), software (plataformas, apps, IA), conectividad y literacidad digital. Elegir bien la tecnología implica conocer sus posibilidades y limitaciones, así como asegurar acceso equitativo para todos los estudiantes.</p>
+        <p><strong>Pregunta clave:</strong> ¿Todos los estudiantes pueden acceder y usar esta tecnología sin barreras?</p>
+        <span class="example-tag">Plataformas digitales</span><span class="example-tag">Inteligencia artificial</span><span class="example-tag">Entornos virtuales</span>
+      </div>
+
+      <div id="t4" class="tab-panel">
+        <h3>⚖️ Componente Ético</h3>
+        <p>Todo uso de tecnología en educación implica decisiones éticas: privacidad de datos, equidad de acceso, sesgos algorítmicos, uso responsable de IA, derechos de autor. La Tecnología Educativa consciente no ignora estas tensiones; las integra como parte del diseño y forma al estudiante en ciudadanía digital crítica.</p>
+        <p><strong>Pregunta clave:</strong> ¿Esta tecnología protege la dignidad y los derechos del estudiante?</p>
+        <span class="example-tag">Privacidad de datos</span><span class="example-tag">Equidad digital</span><span class="example-tag">Uso ético de IA</span>
+      </div>
+
+      <div id="t5" class="tab-panel">
+        <h3>🌐 Componente Social</h3>
+        <p>El aprendizaje es un acto social. La Tecnología Educativa considera el contexto cultural, socioeconómico y comunitario del estudiante. Diseñar sin mirar el entorno social puede reproducir desigualdades en lugar de reducirlas. Incluye también la colaboración entre pares, la cocreación de conocimiento y el vínculo con la comunidad.</p>
+        <p><strong>Pregunta clave:</strong> ¿Esta tecnología acerca o aleja al estudiante de su comunidad de aprendizaje?</p>
+        <span class="example-tag">Aprendizaje colaborativo</span><span class="example-tag">Contexto cultural</span><span class="example-tag">Comunidades de práctica</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIA -->
+<section id="diferencia" class="acc-section">
+  <div class="container">
+    <span class="sec-badge">Punto crítico</span>
+    <h2 class="sec-title">¿Por qué no es lo mismo usar tecnología que hacer Tecnología Educativa?</h2>
+    <p class="sec-intro">Esta distinción es la pregunta más importante del campo. Despliega cada argumento.</p>
+
+    <div class="accordion">
+      <div class="acc-item">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          <span>La intención pedagógica lo cambia todo</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="acc-body">
+          Poner un video no es Tecnología Educativa. Diseñar actividades donde el video genera preguntas, debate y construcción de significado conjunto: eso sí lo es. La diferencia no está en la herramienta sino en la intención formativa que la acompaña. Según Coll (2004), lo que transforma el aprendizaje no es la tecnología per se, sino el uso pedagógico que se hace de ella.
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          <span>La tecnología sin pedagogía es entretenimiento, no educación</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="acc-body">
+          Un juego digital puede ser atractivo y generar entretenimiento. Pero si no hay objetivos de aprendizaje claros, retroalimentación formativa y reflexión del estudiante sobre su propio proceso, es difícil llamarlo Tecnología Educativa. La motivación es condición necesaria pero no suficiente para el aprendizaje.
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          <span>El docente como diseñador, no como operador</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="acc-body">
+          En el uso instrumental de tecnología, el docente opera una herramienta. En la Tecnología Educativa, el docente diseña experiencias. Esto requiere habilidades distintas: conocer la teoría del aprendizaje, identificar cuándo y por qué cierta tecnología favorece un objetivo específico, y adaptar el diseño al grupo real frente a él.
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          <span>La evaluación como parte del diseño</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="acc-body">
+          El uso casual de tecnología rara vez incluye evaluación del aprendizaje. La Tecnología Educativa diseña la evaluación junto con la actividad: ¿cómo sabremos que el estudiante aprendió? ¿qué evidencias recogeremos? ¿cómo retroalimentaremos? La evaluación formativa no es un añadido; es parte constitutiva del diseño.
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          <span>Accesibilidad como criterio de diseño, no como añadido</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="acc-body">
+          Un recurso que no considera la diversidad del grupo desde su diseño no es Tecnología Educativa genuina. La accesibilidad —subtítulos para personas con discapacidad auditiva, lectores de pantalla, lenguaje claro, múltiples formatos— debe estar presente desde la primera decisión de diseño, no aplicada al final como parche.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EJEMPLOS -->
+<section id="ejemplos" class="examples-section">
+  <div class="container">
+    <span class="sec-badge">En la práctica</span>
+    <h2 class="sec-title">¿Cómo se ve la Tecnología Educativa en contextos reales?</h2>
+    <p class="sec-intro">No como herramientas aisladas, sino como diseños pedagógicos con propósito.</p>
+
+    <div class="examples-grid">
+      <div class="ex-card">
+        <div class="ex-icon">🗺️</div>
+        <h3>Aprendizaje basado en proyectos + plataformas digitales</h3>
+        <p>Estudiantes que investigan un problema real, usan Padlet o Notion para organizar su investigación colaborativa y presentan resultados en un video editado. La plataforma es el andamio, no el fin.</p>
+      </div>
+      <div class="ex-card">
+        <div class="ex-icon">🤖</div>
+        <h3>Inteligencia artificial como tutor adaptativo</h3>
+        <p>Herramientas como Khan Academy o plataformas con IA ajustan la dificultad al ritmo del estudiante, ofrecen retroalimentación inmediata y permiten al docente identificar quién necesita apoyo adicional.</p>
+      </div>
+      <div class="ex-card">
+        <div class="ex-icon">🌐</div>
+        <h3>Mundos virtuales para programación</h3>
+        <p>Entornos como Minecraft Education, Rec Room o Roblox donde los estudiantes aprenden lógica computacional construyendo, no solo mirando. El error es parte del proceso de aprendizaje.</p>
+      </div>
+      <div class="ex-card">
+        <div class="ex-icon">📊</div>
+        <h3>Evaluación formativa con tecnología</h3>
+        <p>Kahoot, Socrative o Mentimeter usados no para "hacer la clase entretenida", sino para diagnosticar comprensión en tiempo real y ajustar la instrucción del docente en ese momento.</p>
+      </div>
+      <div class="ex-card">
+        <div class="ex-icon">🎧</div>
+        <h3>Podcasts y audio como recurso educativo</h3>
+        <p>Contenido educativo en audio diseñado con guía de escucha, preguntas de reflexión y actividad posterior. El estudiante no es receptor pasivo: analiza, debate y produce conocimiento.</p>
+      </div>
+      <div class="ex-card">
+        <div class="ex-icon">🤝</div>
+        <h3>Aulas híbridas con diseño inclusivo</h3>
+        <p>Entornos que combinan presencialidad y virtualidad con atención a la diversidad: subtítulos automáticos, lengua de señas, múltiples formas de participación y evaluación flexible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUSIÓN -->
+<section id="inclusion" class="inc-section">
+  <div class="container inc-inner">
+    <span class="sec-badge">Eje fundamental</span>
+    <h2 class="sec-title" style="color:#fff">Inclusión y Accesibilidad:<br/>el corazón de la Tecnología Educativa</h2>
+
+    <p class="inc-hero-text">
+      "Un recurso educativo que no puede ser usado por todos no es un recurso educativo. Es un recurso para algunos."
+    </p>
+
+    <p class="sec-intro">La tecnología puede ampliar las brechas educativas o reducirlas. La diferencia está en las decisiones de diseño.</p>
+
+    <div class="inc-grid">
+      <div class="inc-card">
+        <div class="ic-icon">👂</div>
+        <h3>Discapacidad auditiva</h3>
+        <p>Subtítulos en videos, transcripciones de audio, apoyos visuales, instrucciones escritas, comunicación por chat y materiales 100% textuales garantizan participación plena.</p>
+      </div>
+      <div class="inc-card">
+        <div class="ic-icon">👁️</div>
+        <h3>Discapacidad visual</h3>
+        <p>Lectores de pantalla, etiquetas alt en imágenes, contraste adecuado, fuentes legibles y navegación por teclado permiten acceder al contenido sin barreras visuales.</p>
+      </div>
+      <div class="inc-card">
+        <div class="ic-icon">🧠</div>
+        <h3>Diversidad cognitiva</h3>
+        <p>Lenguaje claro y sencillo, instrucciones paso a paso, múltiples formatos (texto, imagen, audio), sin sobrecarga de estímulos y con tiempos flexibles para procesamiento.</p>
+      </div>
+      <div class="inc-card">
+        <div class="ic-icon">📶</div>
+        <h3>Brecha digital</h3>
+        <p>Recursos que funcionan offline, no requieren registro, son ligeros para conexiones lentas y pueden descargarse para uso sin internet, asegurando acceso equitativo.</p>
+      </div>
+    </div>
+
+    <div class="inc-principles">
+      <h3>Principios del Diseño Universal para el Aprendizaje (DUA)</h3>
+      <div class="principle">
+        <div class="p-num">1</div>
+        <p><strong>Múltiples medios de representación:</strong> presenta la información de diversas formas —texto, imagen, audio, video, infografía— para que cada estudiante acceda desde su canal de aprendizaje.</p>
+      </div>
+      <div class="principle">
+        <div class="p-num">2</div>
+        <p><strong>Múltiples medios de acción y expresión:</strong> el estudiante elige cómo demostrar lo que aprendió: escribir, hablar, crear, diseñar. No hay un solo camino válido.</p>
+      </div>
+      <div class="principle">
+        <div class="p-num">3</div>
+        <p><strong>Múltiples medios de motivación e implicación:</strong> conecta el contenido con los intereses del estudiante, ofrece opciones de autonomía y crea un ambiente de aprendizaje seguro y retador.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFLEXIÓN -->
+<section id="reflexion" class="quiz-section">
+  <div class="container">
+    <span class="sec-badge">Para ti</span>
+    <h2 class="sec-title">¿Cómo vas hasta aquí?</h2>
+    <p class="sec-intro">Tres preguntas para explorar lo que aprendiste. No hay respuestas incorrectas, pero sí hay una reflexión al final de cada una.</p>
+
+    <div class="quiz-box">
+      <h3>Pequeña reflexión interactiva</h3>
+      <p class="qdesc">Selecciona la opción que más se acerca a tu pensamiento y lee la retroalimentación.</p>
+
+      <div class="progress-row">
+        <span id="prog-txt">Pregunta 1 de 3</span>
+        <div class="prog-bar"><div class="prog-fill" id="prog-fill"></div></div>
+        <span id="prog-pct">0%</span>
+      </div>
+
+      <!-- Q1 -->
+      <div class="qitem" id="rq1">
+        <p>1. Tienes que usar tecnología en tu clase mañana. ¿Cuál es tu primer paso?</p>
+        <div class="qopts">
+          <label><input type="radio" name="rq1" value="a" onchange="feedback('rq1','a')"> Busco en YouTube un buen video sobre el tema</label>
+          <label><input type="radio" name="rq1" value="b" onchange="feedback('rq1','b')"> Defino el objetivo de aprendizaje y luego elijo la herramienta que mejor lo apoya</label>
+          <label><input type="radio" name="rq1" value="c" onchange="feedback('rq1','c')"> Uso lo que ya conozco aunque no sepa bien para qué sirve pedagógicamente</label>
+        </div>
+        <div class="quiz-result" id="fb-rq1"></div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="qitem" id="rq2">
+        <p>2. En tu grupo hay un estudiante con discapacidad auditiva. Diseñas un recurso con video. ¿Qué haces?</p>
+        <div class="qopts">
+          <label><input type="radio" name="rq2" value="a" onchange="feedback('rq2','a')"> Le pido que se siente cerca para que pueda leer mis labios</label>
+          <label><input type="radio" name="rq2" value="b" onchange="feedback('rq2','b')"> Agrego subtítulos, transcripción escrita y apoyo visual desde el diseño inicial</label>
+          <label><input type="radio" name="rq2" value="c" onchange="feedback('rq2','c')"> Diseño el recurso sin audio desde el principio para que todos accedan igual</label>
+        </div>
+        <div class="quiz-result" id="fb-rq2"></div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="qitem" id="rq3">
+        <p>3. ¿Cuál de estos ejemplos describe mejor la Tecnología Educativa?</p>
+        <div class="qopts">
+          <label><input type="radio" name="rq3" value="a" onchange="feedback('rq3','a')"> Un docente proyecta diapositivas de PowerPoint con mucho texto</label>
+          <label><input type="radio" name="rq3" value="b" onchange="feedback('rq3','b')"> Estudiantes usan Kahoot porque "hace la clase más divertida"</label>
+          <label><input type="radio" name="rq3" value="c" onchange="feedback('rq3','c')"> El docente diseña en Padlet una actividad colaborativa donde los estudiantes resuelven un problema real y documentan su proceso</label>
+        </div>
+        <div class="quiz-result" id="fb-rq3"></div>
+      </div>
+
+      <button class="quiz-btn" onclick="finishQuiz()">Ver mi reflexión final</button>
+      <div class="quiz-result" id="final-fb"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Tecnología Educativa · Sitio Web Educativo Interactivo · Actividad 5</strong><br/>
+   Martín Joaquín Aguilar Muñoz &amp; Úrsula Estela González Rosales · 2026
+</footer>
+
+<script>
+// TABS
+function openTab(btn, id) {
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active') });
+  document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active') });
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+
+// ACCORDION
+function toggleAcc(btn) {
+  var body = btn.nextElementSibling;
+  var isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.acc-trigger').forEach(function(b){ b.classList.remove('open') });
+  document.querySelectorAll('.acc-body').forEach(function(b){ b.classList.remove('open') });
+  if (!isOpen) {
+    btn.classList.add('open');
+    body.classList.add('open');
+  }
+}
+
+// FEEDBACK
+var feedbacks = {
+  rq1: {
+    a: { type:'info', text:'Buscar un video es un buen punto de partida, pero sin un objetivo de aprendizaje claro el video puede ser entretenido sin que nadie aprenda nada concreto. La Tecnología Educativa empieza por la pregunta: ¿qué quiero que el estudiante comprenda o pueda hacer?' },
+    b: { type:'ok',   text:'¡Exacto! Este es el enfoque de la Tecnología Educativa: primero el propósito pedagógico, luego la elección de la herramienta. La tecnología se subordina al aprendizaje, no al revés.' },
+    c: { type:'info', text:'Usar lo que ya conocemos es natural, pero sin reflexión pedagógica podemos repetir prácticas que no favorecen el aprendizaje real. Vale la pena preguntarse: ¿para qué sirve esto que voy a usar?' }
+  },
+  rq2: {
+    a: { type:'info', text:'Pedir al estudiante que se acerque traslada la responsabilidad del acceso al propio estudiante, lo que no es inclusión sino adaptación improvisada. La accesibilidad genuina no depende del esfuerzo del estudiante con discapacidad.' },
+    b: { type:'ok',   text:'Subtítulos, transcripción y apoyo visual desde el diseño inicial: esto es accesibilidad como criterio de diseño. El estudiante con discapacidad auditiva accede exactamente en las mismas condiciones que el resto.' },
+    c: { type:'ok',   text:'Diseñar sin audio desde el inicio es una decisión inclusiva muy sólida: elimina la barrera antes de que exista. Es Diseño Universal para el Aprendizaje aplicado: no adaptas para uno, diseñas bien para todos.' }
+  },
+  rq3: {
+    a: { type:'info', text:'Proyectar diapositivas con texto es tecnología en el aula, pero sin interacción, sin objetivos explícitos de aprendizaje ni evaluación, no es Tecnología Educativa. Es uso instrumental.' },
+    b: { type:'info', text:'Kahoot puede ser parte de Tecnología Educativa si se usa con un propósito pedagógico claro: diagnosticar comprensión, generar debate, identificar errores conceptuales. Pero "hacer la clase divertida" como único fin no es suficiente.' },
+    c: { type:'ok',   text:'Aquí está la Tecnología Educativa en acción: problema real, colaboración, documentación del proceso, intención formativa explícita. La plataforma (Padlet) es el andamio, no el protagonista.' }
+  }
+};
+
+var answered = {};
+function feedback(qname, val) {
+  var fb = feedbacks[qname][val];
+  var el = document.getElementById('fb-' + qname);
+  el.className = 'quiz-result ' + fb.type + ' show';
+  el.innerHTML = fb.text;
+  answered[qname] = true;
+  var count = Object.keys(answered).length;
+  var pct = Math.round((count / 3) * 100);
+  document.getElementById('prog-fill').style.width = pct + '%';
+  document.getElementById('prog-pct').innerText = pct + '%';
+  document.getElementById('prog-txt').innerText = 'Pregunta ' + Math.min(count + 1, 3) + ' de 3';
+}
+
+function finishQuiz() {
+  var count = Object.keys(answered).length;
+  var el = document.getElementById('final-fb');
+  if (count < 3) {
+    el.className = 'quiz-result info show';
+    el.innerHTML = 'Responde las ' + (3 - count) + ' pregunta(s) restante(s) para ver tu reflexión final.';
+    return;
+  }
+  el.className = 'quiz-result ok show';
+  el.innerHTML = '<strong>¡Completaste la reflexión!</strong> La Tecnología Educativa es, fundamentalmente, una práctica de diseño pedagógico consciente. No se trata de qué herramienta usas, sino de por qué la eliges, cómo la integras y a quién incluyes. Si llegaste hasta aquí, ya tienes una comprensión más profunda de la diferencia entre usar tecnología y hacer Tecnología Educativa.';
+  document.getElementById('prog-fill').style.width = '100%';
+  document.getElementById('prog-pct').innerText = '100%';
+  el.scrollIntoView({ behavior:'smooth', block:'center' });
+}
+</script>
+</body>
+</html>
