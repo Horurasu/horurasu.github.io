@@ -16,7 +16,6 @@ const translations = {
      googleScholarSubtext: "Citas y artículos",
      academiaSubtext: "Perfil académico",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "Revistas científicas japonesas",
      footerMessage: "Gracias por visitar mi página personal. Si deseas contactarme para colaboraciones, proyectos o cualquier consulta, no dudes en hacerlo."
    },
    en: {
@@ -36,7 +35,6 @@ const translations = {
      googleScholarSubtext: "Citations and articles",
      academiaSubtext: "Academic profile",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "Japanese scientific journals",
      footerMessage: "Thank you for visiting my personal page. If you would like to contact me for collaborations, projects, or any inquiries, please feel free to do so."
    },
    ja: {
@@ -56,7 +54,6 @@ const translations = {
      googleScholarSubtext: "引用と記事",
      academiaSubtext: "学術プロフィール",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "日本の科学雑誌",
      footerMessage: "私の個人ページを訪問していただきありがとうございます。コラボレーション、プロジェクト、または質問がある場合は、遠慮なくご連絡ください。"
    },
    de: {
@@ -76,7 +73,6 @@ const translations = {
      googleScholarSubtext: "Zitate und Artikel",
      academiaSubtext: "Akademisches Profil",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "Japanische Wissenschaftsmagazine",
      footerMessage: "Vielen Dank für Ihren Besuch auf meiner persönlichen Seite. Wenn Sie mich wegen Kooperationen, Projekten oder Anfragen kontaktieren möchten, zögern Sie bitte nicht, dies zu tun."
    },
    fr: {
@@ -96,7 +92,6 @@ const translations = {
      googleScholarSubtext: "Citations et articles",
      academiaSubtext: "Profil académique",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "Revues scientifiques japonaises",
      footerMessage: "Merci de visiter ma page personnelle. Si vous souhaitez me contacter pour des collaborations, des projets ou toute question, n'hésitez pas à le faire."
    },
    hi: {
@@ -116,7 +111,6 @@ const translations = {
      googleScholarSubtext: "उद्धरण और लेख",
      academiaSubtext: "शैक्षणिक प्रोफ़ाइल",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "जापानी वैज्ञानिक पत्रिकाएँ",
      footerMessage: "मेरे व्यक्तिगत पृष्ठ पर आने के लिए धन्यवाद। यदि आप सहयोग, परियोजनाओं या किसी भी प्रश्न के लिए मुझसे संपर्क करना चाहते हैं, तो कृपया बेझिझक करें।"
    },
    ru: {
@@ -136,7 +130,6 @@ const translations = {
      googleScholarSubtext: "Цитаты и статьи",
      academiaSubtext: "Академический профиль",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "Японские научные журналы",
      footerMessage: "Спасибо за посещение моей личной страницы. Если вы хотите связаться со мной для сотрудничества, проектов или любых вопросов, пожалуйста, не стесняйтесь это сделать."
    },
    pt: {
@@ -156,7 +149,6 @@ const translations = {
      googleScholarSubtext: "Citações e artigos",
      academiaSubtext: "Perfil acadêmico",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "Revistas científicas japonesas",
      footerMessage: "Obrigado por visitar minha página pessoal. Se você deseja entrar em contato comigo para colaborações, projetos ou qualquer dúvida, fique à vontade para fazê-lo."
    },
    zh: {
@@ -176,7 +168,6 @@ const translations = {
      googleScholarSubtext: "引用和文章",
      academiaSubtext: "学术档案",
      orcidSubtext: "0009-0003-5618-2261",
-     jstageSubtext: "日本科学期刊",
      footerMessage: "感谢您访问我的个人页面。如果您想联系我进行合作、项目或任何咨询，请随时与我联系。"
    }
  };
@@ -209,7 +200,6 @@ const translations = {
    linkSubtexts[8].textContent = translations[lang].googleScholarSubtext;
    linkSubtexts[9].textContent = translations[lang].academiaSubtext;
    linkSubtexts[10].textContent = translations[lang].orcidSubtext;
-   linkSubtexts[11].textContent = translations[lang].jstageSubtext;
 
    document.querySelector('.footer p:first-child').textContent = translations[lang].footerMessage;
    

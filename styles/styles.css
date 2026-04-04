@@ -3,11 +3,12 @@
    --secondary-color: #f5f5f5;
    --text-color: #000000;
    --button-hover: #eaeaea;
-   --shadow-color: rgba(0, 0, 0, 0.1);
-   --color-programming: #000000;
-   --color-teaching: #000000;
-   --color-research: #000000;
-   --color-social: #000000;
+   --shadow-color: rgba(255, 255, 255, 0.1);
+   --color-programming: #ffffff;
+   --color-teaching: #ffffff;
+   --color-research: #ffffff;
+   --color-social: #ffffff;
+   --color-panel: #ffffff;
     
 }
 
@@ -33,9 +34,14 @@ body {
    padding: 10px;
    border-radius: 8px;
    font-weight: bold;
-   color: var(--text-color);
+   color: #ffffff;
    text-decoration: none;
 
+}
+
+.contact-email a {
+   color: #ffffff;
+   text-decoration: none;
 }
 
 .language-selector {
@@ -139,21 +145,22 @@ body {
    border-radius: 20px;
    font-size: 0.8rem;
    font-weight: 500;
+  
 }
 
 .tag-programming {
-   background-color: rgba(37, 100, 235, 0.415);
-   color: rgb(12, 40, 255) ;
+   background-color: rgba(201, 16, 195, 0.722);
+   color: var(--color-panel);
 }
 
 .tag-teaching {
-   background-color: rgba(5, 150, 104, 0.381);
-   color: rgba(0, 44, 31, 0.793) ;
+   background-color: rgba(47, 141, 255, 0.666);
+    color: var(--color-panel);
 }
 
 .tag-research {
-   background-color: rgba(124, 58, 237, 0.403);
-    color: rgba(30, 4, 76, 0.639) ;
+  background-color: rgba(230, 37, 37, 0.666);
+    color: var(--color-panel);
 }
 
 .background {
@@ -175,7 +182,7 @@ body {
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(255, 255, 255, 0.428);
+   background-color: rgba(0, 0, 0, 0.386);
    backdrop-filter: blur(2px);
    z-index: -1;
    pointer-events: none;
@@ -223,6 +230,9 @@ body {
    font-weight: bold;
    margin-bottom: 5px;
    text-align: center;
+   color: var(--color-panel);
+      text-transform: uppercase;
+   
 }
 
 .profile-title {
@@ -230,7 +240,7 @@ body {
    margin-bottom: 15px;
    text-align: center;
    max-width: 600px;
-   color: #2e2e2e;
+   color: var(--color-panel);
 }
 
 .profile-description {
@@ -239,6 +249,7 @@ body {
    margin-bottom: 30px;
    max-width: 600px;
    line-height: 1.6;
+   color: var(--color-panel);
 }
 
 .links-container {
