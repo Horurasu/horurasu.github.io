@@ -1,5 +1,5 @@
 :root {
-   --primary-color: #ffffff;
+   --primary-color: #ede7dbe0;
    --secondary-color: #f5f5f5;
    --text-color: #000000;
    --button-hover: #eaeaea;
@@ -182,8 +182,8 @@ body {
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(0, 0, 0, 0.386);
-   backdrop-filter: blur(2px);
+   background-color: rgba(0, 0, 0, 0.462);
+   backdrop-filter: blur(3px);
    z-index: -1;
    pointer-events: none;
    will-change: transform;
@@ -240,7 +240,7 @@ body {
    margin-bottom: 15px;
    text-align: center;
    max-width: 600px;
-   color: var(--color-panel);
+   color: var(--primary-color);
 }
 
 .profile-description {
