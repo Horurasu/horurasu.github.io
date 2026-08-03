@@ -1,12 +1,11 @@
 const translations = {
    es: {
      profileTitle: "Ingeniero en Software | Estudiante de Maestria en MIEVEA Desarrollador de Tecnologías Inmersivas | Investigador en Tecnologías Inmersivas",
-     tags: ["Desarrollo", "Mundos Virtuales", "Educación", "Investigación", "IA Aplicada"],
+     tags: ["Desarrollo", "Mundos Virtuales", "Educación", "Investigación", "IA Inmersiva"],
      socialMedia: "Redes Sociales",
      linkedinSubtext: "Perfil profesional",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Página oficial",
-     instagramSubtext: "Fotos y actualizaciones",
      youtubeSubtext: "@Horurasu",
      programming: "Programación",
      githubSubtext: "@Horurasu",
@@ -20,12 +19,11 @@ const translations = {
    },
    en: {
      profileTitle: "Software Engineer | MIEVEA Master's Student | Immersive Technologies Developer | Immersive Technologies Researcher",
-     tags: ["Development", "Virtual Worlds", "Education", "Research", "Applied AI"],
+     tags: ["Development", "Virtual Worlds", "Education", "Research", "Immersive AI"],
      socialMedia: "Social Media",
      linkedinSubtext: "Professional profile",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Official page",
-     instagramSubtext: "Photos and updates",
      youtubeSubtext: "@Horurasu",
      programming: "Programming",
      githubSubtext: "@Horurasu",
@@ -39,12 +37,11 @@ const translations = {
    },
    ja: {
      profileTitle: "ソフトウェアエンジニア | MIEVEAの修士課程学生 | イマーシブテクノロジー開発者 | イマーシブテクノロジー研究者",
-     tags: ["開発", "バーチャルワールド", "教育", "研究", "応用AI"],
+     tags: ["開発", "バーチャルワールド", "教育", "研究", "イマーシブAI"],
      socialMedia: "ソーシャルメディア",
      linkedinSubtext: "プロフェッショナルプロフィール",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "公式ページ",
-     instagramSubtext: "写真とアップデート",
      youtubeSubtext: "@Horurasu",
      programming: "プログラミング",
      githubSubtext: "@Horurasu",
@@ -58,12 +55,11 @@ const translations = {
    },
    de: {
      profileTitle: "Softwareingenieur | MIEVEA-Masterstudent | Entwickler immersiver Technologien | Forscher für immersive Technologien",
-     tags: ["Entwicklung", "Virtuelle Welten", "Bildung", "Forschung", "Angewandte KI"],
+     tags: ["Entwicklung", "Virtuelle Welten", "Bildung", "Forschung", "Immersive KI"],
      socialMedia: "Soziale Medien",
      linkedinSubtext: "Berufliches Profil",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Offizielle Seite",
-     instagramSubtext: "Fotos und Updates",
      youtubeSubtext: "@Horurasu",
      programming: "Programmierung",
      githubSubtext: "@Horurasu",
@@ -77,12 +73,11 @@ const translations = {
    },
    fr: {
      profileTitle: "Ingénieur logiciel | Étudiant en Master MIEVEA | Développeur de technologies immersives | Chercheur en technologies immersives",
-     tags: ["Développement", "Mondes virtuels", "Éducation", "Recherche", "IA appliquée"],
+     tags: ["Développement", "Mondes virtuels", "Éducation", "Recherche", "IA immersive"],
      socialMedia: "Réseaux sociaux",
      linkedinSubtext: "Profil professionnel",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Page officielle",
-     instagramSubtext: "Photos et mises à jour",
      youtubeSubtext: "@Horurasu",
      programming: "Programmation",
      githubSubtext: "@Horurasu",
@@ -96,12 +91,11 @@ const translations = {
    },
    hi: {
      profileTitle: "सॉफ़्टवेयर इंजीनियर | MIEVEA मास्टर छात्र | इमर्सिव टेक्नोलॉजी डेवलपर | इमर्सिव टेक्नोलॉजी शोधकर्ता",
-     tags: ["विकास", "आभासी दुनिया", "शिक्षा", "अनुसंधान", "लागू एआई"],
+     tags: ["विकास", "आभासी दुनिया", "शिक्षा", "अनुसंधान", "इमर्सिव एआई"],
      socialMedia: "सोशल मीडिया",
      linkedinSubtext: "पेशेवर प्रोफ़ाइल",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "आधिकारिक पृष्ठ",
-     instagramSubtext: "फोटो और अपडेट",
      youtubeSubtext: "@Horurasu",
      programming: "प्रोग्रामिंग",
      githubSubtext: "@Horurasu",
@@ -115,12 +109,11 @@ const translations = {
    },
    ru: {
      profileTitle: "Инженер-программист | Магистрант MIEVEA | Разработчик иммерсивных технологий | Исследователь иммерсивных технологий",
-     tags: ["Разработка", "Виртуальные миры", "Образование", "Исследования", "Прикладной ИИ"],
+     tags: ["Разработка", "Виртуальные миры", "Образование", "Исследования", "Иммерсивный ИИ"],
      socialMedia: "Социальные сети",
      linkedinSubtext: "Профессиональный профиль",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Официальная страница",
-     instagramSubtext: "Фотографии и обновления",
      youtubeSubtext: "@Horurasu",
      programming: "Программирование",
      githubSubtext: "@Horurasu",
@@ -134,12 +127,11 @@ const translations = {
    },
    pt: {
      profileTitle: "Engenheiro de Software | Estudante de Mestrado em MIEVEA | Desenvolvedor de Tecnologias Imersivas | Pesquisador de Tecnologias Imersivas",
-     tags: ["Desenvolvimento", "Mundos Virtuais", "Educação", "Pesquisa", "IA Aplicada"],
+     tags: ["Desenvolvimento", "Mundos Virtuais", "Educação", "Pesquisa", "IA Imersiva"],
      socialMedia: "Redes Sociais",
      linkedinSubtext: "Perfil profissional",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "Página oficial",
-     instagramSubtext: "Fotos e atualizações",
      youtubeSubtext: "@Horurasu",
      programming: "Programação",
      githubSubtext: "@Horurasu",
@@ -153,12 +145,11 @@ const translations = {
    },
    zh: {
      profileTitle: "软件工程师 | MIEVEA 硕士生 | 沉浸式技术开发者 | 沉浸式技术研究员",
-     tags: ["开发", "虚拟世界", "教育", "研究", "应用人工智能"],
+     tags: ["开发", "虚拟世界", "教育", "研究", "沉浸式人工智能"],
      socialMedia: "社交媒体",
      linkedinSubtext: "专业档案",
      twitterSubtext: "@MartinJAguilarM",
      facebookSubtext: "官方页面",
-     instagramSubtext: "照片和更新",
      youtubeSubtext: "@Horurasu",
      programming: "编程",
      githubSubtext: "@Horurasu",
@@ -192,14 +183,13 @@ const translations = {
    linkSubtexts[0].textContent = translations[lang].linkedinSubtext;
    linkSubtexts[1].textContent = translations[lang].twitterSubtext;
    linkSubtexts[2].textContent = translations[lang].facebookSubtext;
-   linkSubtexts[3].textContent = translations[lang].instagramSubtext;
-   linkSubtexts[4].textContent = translations[lang].youtubeSubtext;
-   linkSubtexts[5].textContent = translations[lang].githubSubtext;
-   linkSubtexts[6].textContent = translations[lang].stackoverflowSubtext;
-   linkSubtexts[7].textContent = translations[lang].researchgateSubtext;
-   linkSubtexts[8].textContent = translations[lang].googleScholarSubtext;
-   linkSubtexts[9].textContent = translations[lang].academiaSubtext;
-   linkSubtexts[10].textContent = translations[lang].orcidSubtext;
+   linkSubtexts[3].textContent = translations[lang].youtubeSubtext;
+   linkSubtexts[4].textContent = translations[lang].githubSubtext;
+   linkSubtexts[5].textContent = translations[lang].stackoverflowSubtext;
+   linkSubtexts[6].textContent = translations[lang].researchgateSubtext;
+   linkSubtexts[7].textContent = translations[lang].googleScholarSubtext;
+   linkSubtexts[8].textContent = translations[lang].academiaSubtext;
+   linkSubtexts[9].textContent = translations[lang].orcidSubtext;
 
    document.querySelector('.footer p:first-child').textContent = translations[lang].footerMessage;
    
