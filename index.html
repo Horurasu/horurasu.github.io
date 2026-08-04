@@ -56,6 +56,8 @@
          </div>
       </div>
 
+         <div class="seigaiha-divider"></div>
+
          <div class="language-selector" id="languageSelector">
              <button class="lang-btn active" data-lang="es" title="Español">
                  <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Español" />
@@ -166,6 +168,8 @@
          </div>
          </a>
 
+         <div class="subsection-label"><i class="fas fa-id-card"></i> <span class="profiles-label-text">Perfiles académicos</span></div>
+
          <a href="https://www.researchgate.net/profile/Martin-Aguilar-Munoz" class="link" target="_blank">
          <div class="link-image">
             <i class="fab fa-researchgate researchgate-icon"></i>
@@ -181,7 +185,7 @@
             <i class="fab fa-google google-icon"></i>
          </div>
          <div>
-            <div class="link-text">Google Académico</div>
+            <div class="link-text">Google Scholar</div>
             <div class="link-subtext">Citas y artículos</div>
          </div>
          </a>
@@ -205,12 +209,75 @@
             <div class="link-subtext">0009-0003-5618-2261</div>
          </div>
          </a>
+
+         <div class="subsection-label"><i class="fas fa-newspaper"></i> <span class="publications-label-text">Publicaciones destacadas</span></div>
+
+         <div class="pub-book" id="pubBook">
+            <div class="pub-book-stack" id="pubBookStack">
+               <div class="pub-ribbon"></div>
+
+               <div class="pub-page active" data-page="0">
+                  <span class="venue-badge">
+                     <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jp.svg" alt="Japón" />
+                     <span>日本</span>
+                  </span>
+                  <div class="article-header">
+                     <i class="fas fa-file-alt article-icon"></i>
+                     <div class="article-title">Unimodal vs. Intermodal Paradigms in Algorithms: Compensating for Kinaesthetic Absence in EDIT for Programming</div>
+                  </div>
+                  <div class="article-meta">バーチャル学会2025 (Sociedad Virtual, Japón) &middot; 2025</div>
+                  <div class="article-authors">Martin Joaquin Aguilar Muñoz, Christian Jonathan Angel Rueda, Ricardo Rivera Carrillo</div>
+                  <a href="https://doi.org/10.57460/vconf.2025.0_136" class="article-cta" target="_blank"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></a>
+               </div>
+
+               <div class="pub-page" data-page="1">
+                  <div class="article-header">
+                     <i class="fas fa-file-alt article-icon"></i>
+                     <div class="article-title">Inclusive Virtual Worlds for Differentiating Programming Language Syntax: An Action Research Approach</div>
+                  </div>
+                  <div class="article-meta">International Journal of Emerging Technologies in Learning (iJET) &middot; 2026</div>
+                  <div class="article-authors">M. J. Aguilar Muñoz, C. J. Ángel Rueda, A. Escudero-Nahón, S. L. Canchola Magdaleno, F. A. Torres-Espriú, R. Chaparro-Sánchez</div>
+                  <a href="https://doi.org/10.3991/ijet.v21i02.61361" class="article-cta" target="_blank"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></a>
+               </div>
+
+               <div class="pub-page" data-page="2">
+                  <div class="article-header">
+                     <i class="fas fa-file-alt article-icon"></i>
+                     <div class="article-title">3D Virtual Worlds as Educational Spaces: Analysis of Uses and Affordances</div>
+                  </div>
+                  <div class="article-meta">IETI Transactions on Data Analysis and Forecasting (iTDAF) &middot; 2026</div>
+                  <div class="article-authors">M. J. Aguilar Muñoz, C. J. Angel Rueda, A. Escudero-Nahón, R. Chaparro-Sánchez</div>
+                  <a href="https://doi.org/10.3991/itdaf.v4i2.61305" class="article-cta" target="_blank"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></a>
+               </div>
+
+               <div class="pub-page pub-page-more" data-page="3">
+                  <div class="pub-more-icon"><i class="fas fa-graduation-cap"></i></div>
+                  <div class="pub-more-title" id="pubMoreTitle">Más publicaciones en Google Scholar</div>
+                  <div class="pub-more-sub" id="pubMoreSub">Consulta el historial completo de citas y artículos</div>
+                  <a href="https://scholar.google.es/citations?user=bMT2LS4AAAAJ&hl=es&authuser=1" class="article-cta" target="_blank"><span id="pubMoreCta">Ir a Google Scholar</span> <i class="fas fa-external-link-alt"></i></a>
+               </div>
+            </div>
+
+            <div class="pub-book-nav">
+               <button class="pub-nav-btn" id="pubPrev" type="button" aria-label="Publicación anterior"><i class="fas fa-chevron-left"></i></button>
+               <div class="pub-dots" id="pubDots">
+                  <button class="pub-dot active" data-dot="0" type="button" aria-label="Publicación 1"></button>
+                  <button class="pub-dot" data-dot="1" type="button" aria-label="Publicación 2"></button>
+                  <button class="pub-dot" data-dot="2" type="button" aria-label="Publicación 3"></button>
+                  <button class="pub-dot" data-dot="3" type="button" aria-label="Más publicaciones"></button>
+               </div>
+               <button class="pub-nav-btn" id="pubNext" type="button" aria-label="Publicación siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+         </div>
       </div>
+
+      <div class="seigaiha-divider"></div>
 
       <script src="/src/script.js"></script>
       <script src="/src/language-switcher.js"></script>
+      <script src="/src/publications-book.js"></script>
 
-   
+
       <div class="footer">
          <p>
             Gracias por visitar mi página personal. Si deseas contactarme para
