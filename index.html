@@ -28,16 +28,53 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Cascadia Mono:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <script type="application/ld+json">
+   {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Martín Joaquín Aguilar Muñoz",
+      "alternateName": "Horurasu",
+      "url": "https://horurasu.github.io/",
+      "image": "https://horurasu.github.io/assets/perfil/1765515307327.jpeg",
+      "email": "mailto:martinaguilarjm@gmail.com",
+      "jobTitle": "Ingeniero en Software / Investigador en Tecnologías Inmersivas",
+      "affiliation": {
+         "@type": "CollegeOrUniversity",
+         "name": "MIEVEA"
+      },
+      "sameAs": [
+         "https://orcid.org/0009-0003-5618-2261",
+         "https://scholar.google.es/citations?user=bMT2LS4AAAAJ&hl=es&authuser=1",
+         "https://www.researchgate.net/profile/Martin-Aguilar-Munoz",
+         "https://upsrj.academia.edu/MartínJoaquínAguilarMuñoz",
+         "https://www.linkedin.com/in/martinjoaquinaguilarmunoz/",
+         "https://github.com/Horurasu",
+         "https://x.com/MartinJAguilarM",
+         "https://www.facebook.com/people/Martin-Aguilar/pfbid02is3sjJhgZpgx2nmDyW4njKfN7Erh8iYLJmb93py7BeKKvaW2wmfg8AZ5TahmZ6Mjl/",
+         "https://www.youtube.com/@Horurasu",
+         "https://stackoverflow.com/users/22058015/horurasu"
+      ]
+   }
+   </script>
 </head>
 
 <body>
    <div class="background"></div>
    <div class="overlay"></div>
 
+   <button class="qr-toggle" id="qrToggle" type="button" aria-expanded="false" aria-label="Mostrar código QR">
+      <i class="fas fa-qrcode"></i>
+   </button>
+   <div class="qr-panel" id="qrPanel">
+      <div id="qrCode"></div>
+      <span class="qr-hint">Escanea para compartir este perfil</span>
+   </div>
+
    <div class="container">
       <div class="profile">
          <img src="/assets/perfil/1765515307327.jpeg" alt="Foto de Perfil" class="profile-image" />
-         <h1 class="profile-name">Martin Joaquin Aguilar Muñoz</h1>
+         <h1 class="profile-name">Martín Joaquín Aguilar Muñoz</h1>
              <div class="contact-email">
                 <a href="mailto:martinaguilarjm@gmail.com">martinaguilarjm@gmail.com</a>
          </div>
@@ -212,62 +249,42 @@
 
          <div class="subsection-label"><i class="fas fa-newspaper"></i> <span class="publications-label-text">Publicaciones destacadas</span></div>
 
-         <div class="pub-book" id="pubBook">
-            <div class="pub-book-stack" id="pubBookStack">
-               <div class="pub-ribbon"></div>
-
-               <div class="pub-page active" data-page="0">
+         <div class="pub-list" id="pubList">
+            <a class="pub-card" href="https://doi.org/10.57460/vconf.2025.0_136" target="_blank">
+               <div class="article-header">
+                  <i class="fas fa-file-alt article-icon"></i>
+                  <div class="article-title">Unimodal vs. Intermodal Paradigms in Algorithms: Compensating for Kinaesthetic Absence in EDIT for Programming</div>
+               </div>
+               <div class="article-meta">バーチャル学会2025 (Sociedad Virtual, Japón) &middot; 2025</div>
+               <div class="article-authors">Martin Joaquin Aguilar Muñoz, Christian Jonathan Angel Rueda, Ricardo Rivera Carrillo</div>
+               <div class="article-footer">
+                  <span class="article-cta"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></span>
                   <span class="venue-badge">
                      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jp.svg" alt="Japón" />
                      <span>日本</span>
                   </span>
-                  <div class="article-header">
-                     <i class="fas fa-file-alt article-icon"></i>
-                     <div class="article-title">Unimodal vs. Intermodal Paradigms in Algorithms: Compensating for Kinaesthetic Absence in EDIT for Programming</div>
-                  </div>
-                  <div class="article-meta">バーチャル学会2025 (Sociedad Virtual, Japón) &middot; 2025</div>
-                  <div class="article-authors">Martin Joaquin Aguilar Muñoz, Christian Jonathan Angel Rueda, Ricardo Rivera Carrillo</div>
-                  <a href="https://doi.org/10.57460/vconf.2025.0_136" class="article-cta" target="_blank"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></a>
                </div>
+            </a>
 
-               <div class="pub-page" data-page="1">
-                  <div class="article-header">
-                     <i class="fas fa-file-alt article-icon"></i>
-                     <div class="article-title">Inclusive Virtual Worlds for Differentiating Programming Language Syntax: An Action Research Approach</div>
-                  </div>
-                  <div class="article-meta">International Journal of Emerging Technologies in Learning (iJET) &middot; 2026</div>
-                  <div class="article-authors">M. J. Aguilar Muñoz, C. J. Ángel Rueda, A. Escudero-Nahón, S. L. Canchola Magdaleno, F. A. Torres-Espriú, R. Chaparro-Sánchez</div>
-                  <a href="https://doi.org/10.3991/ijet.v21i02.61361" class="article-cta" target="_blank"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></a>
+            <a class="pub-card" href="https://doi.org/10.3991/ijet.v21i02.61361" target="_blank">
+               <div class="article-header">
+                  <i class="fas fa-file-alt article-icon"></i>
+                  <div class="article-title">Inclusive Virtual Worlds for Differentiating Programming Language Syntax: An Action Research Approach</div>
                </div>
+               <div class="article-meta">International Journal of Emerging Technologies in Learning (iJET) &middot; 2026</div>
+               <div class="article-authors">M. J. Aguilar Muñoz, C. J. Ángel Rueda, A. Escudero-Nahón, S. L. Canchola Magdaleno, F. A. Torres-Espriú, R. Chaparro-Sánchez</div>
+               <span class="article-cta"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></span>
+            </a>
 
-               <div class="pub-page" data-page="2">
-                  <div class="article-header">
-                     <i class="fas fa-file-alt article-icon"></i>
-                     <div class="article-title">3D Virtual Worlds as Educational Spaces: Analysis of Uses and Affordances</div>
-                  </div>
-                  <div class="article-meta">IETI Transactions on Data Analysis and Forecasting (iTDAF) &middot; 2026</div>
-                  <div class="article-authors">M. J. Aguilar Muñoz, C. J. Angel Rueda, A. Escudero-Nahón, R. Chaparro-Sánchez</div>
-                  <a href="https://doi.org/10.3991/itdaf.v4i2.61305" class="article-cta" target="_blank"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></a>
+            <a class="pub-card" href="https://doi.org/10.3991/itdaf.v4i2.61305" target="_blank">
+               <div class="article-header">
+                  <i class="fas fa-file-alt article-icon"></i>
+                  <div class="article-title">3D Virtual Worlds as Educational Spaces: Analysis of Uses and Affordances</div>
                </div>
-
-               <div class="pub-page pub-page-more" data-page="3">
-                  <div class="pub-more-icon"><i class="fas fa-graduation-cap"></i></div>
-                  <div class="pub-more-title" id="pubMoreTitle">Más publicaciones en Google Scholar</div>
-                  <div class="pub-more-sub" id="pubMoreSub">Consulta el historial completo de citas y artículos</div>
-                  <a href="https://scholar.google.es/citations?user=bMT2LS4AAAAJ&hl=es&authuser=1" class="article-cta" target="_blank"><span id="pubMoreCta">Ir a Google Scholar</span> <i class="fas fa-external-link-alt"></i></a>
-               </div>
-            </div>
-
-            <div class="pub-book-nav">
-               <button class="pub-nav-btn" id="pubPrev" type="button" aria-label="Publicación anterior"><i class="fas fa-chevron-left"></i></button>
-               <div class="pub-dots" id="pubDots">
-                  <button class="pub-dot active" data-dot="0" type="button" aria-label="Publicación 1"></button>
-                  <button class="pub-dot" data-dot="1" type="button" aria-label="Publicación 2"></button>
-                  <button class="pub-dot" data-dot="2" type="button" aria-label="Publicación 3"></button>
-                  <button class="pub-dot" data-dot="3" type="button" aria-label="Más publicaciones"></button>
-               </div>
-               <button class="pub-nav-btn" id="pubNext" type="button" aria-label="Publicación siguiente"><i class="fas fa-chevron-right"></i></button>
-            </div>
+               <div class="article-meta">IETI Transactions on Data Analysis and Forecasting (iTDAF) &middot; 2026</div>
+               <div class="article-authors">M. J. Aguilar Muñoz, C. J. Angel Rueda, A. Escudero-Nahón, R. Chaparro-Sánchez</div>
+               <span class="article-cta"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></span>
+            </a>
          </div>
       </div>
 
@@ -275,7 +292,8 @@
 
       <script src="/src/script.js"></script>
       <script src="/src/language-switcher.js"></script>
-      <script src="/src/publications-book.js"></script>
+      <script src="/src/qrcode.min.js"></script>
+      <script src="/src/qr-toggle.js"></script>
 
 
       <div class="footer">

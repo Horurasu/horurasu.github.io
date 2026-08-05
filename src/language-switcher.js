@@ -18,9 +18,8 @@ const translations = {
      publicationsLabel: "Publicaciones destacadas",
      academicProfilesLabel: "Perfiles académicos",
      articleCta: "Ver publicación",
-     pubMoreTitle: "Más publicaciones en Google Scholar",
-     pubMoreSub: "Consulta el historial completo de citas y artículos",
-     pubMoreCta: "Ir a Google Scholar",
+     qrToggleLabel: "Mostrar código QR",
+     qrHint: "Escanea para compartir este perfil",
      footerMessage: "Gracias por visitar mi página personal. Si deseas contactarme para colaboraciones, proyectos o cualquier consulta, no dudes en hacerlo."
    },
    en: {
@@ -42,9 +41,8 @@ const translations = {
      publicationsLabel: "Featured Publications",
      academicProfilesLabel: "Academic Profiles",
      articleCta: "View publication",
-     pubMoreTitle: "More publications on Google Scholar",
-     pubMoreSub: "Check the full citation and article history",
-     pubMoreCta: "Go to Google Scholar",
+     qrToggleLabel: "Show QR code",
+     qrHint: "Scan to share this profile",
      footerMessage: "Thank you for visiting my personal page. If you would like to contact me for collaborations, projects, or any inquiries, please feel free to do so."
    },
    ja: {
@@ -66,9 +64,8 @@ const translations = {
      publicationsLabel: "注目の出版物",
      academicProfilesLabel: "学術プロフィール",
      articleCta: "論文を見る",
-     pubMoreTitle: "Google Scholarでもっと見る",
-     pubMoreSub: "引用と論文の全履歴を確認する",
-     pubMoreCta: "Google Scholarへ",
+     qrToggleLabel: "QRコードを表示",
+     qrHint: "スキャンしてこのプロフィールを共有",
      footerMessage: "私の個人ページを訪問していただきありがとうございます。コラボレーション、プロジェクト、または質問がある場合は、遠慮なくご連絡ください。"
    },
    de: {
@@ -90,9 +87,8 @@ const translations = {
      publicationsLabel: "Ausgewählte Publikationen",
      academicProfilesLabel: "Akademische Profile",
      articleCta: "Publikation ansehen",
-     pubMoreTitle: "Weitere Publikationen bei Google Scholar",
-     pubMoreSub: "Vollständige Zitations- und Artikelhistorie ansehen",
-     pubMoreCta: "Zu Google Scholar",
+     qrToggleLabel: "QR-Code anzeigen",
+     qrHint: "Scannen, um dieses Profil zu teilen",
      footerMessage: "Vielen Dank für Ihren Besuch auf meiner persönlichen Seite. Wenn Sie mich wegen Kooperationen, Projekten oder Anfragen kontaktieren möchten, zögern Sie bitte nicht, dies zu tun."
    },
    fr: {
@@ -114,9 +110,8 @@ const translations = {
      publicationsLabel: "Publications en vedette",
      academicProfilesLabel: "Profils académiques",
      articleCta: "Voir la publication",
-     pubMoreTitle: "Plus de publications sur Google Scholar",
-     pubMoreSub: "Consultez l'historique complet des citations et articles",
-     pubMoreCta: "Aller sur Google Scholar",
+     qrToggleLabel: "Afficher le code QR",
+     qrHint: "Scannez pour partager ce profil",
      footerMessage: "Merci de visiter ma page personnelle. Si vous souhaitez me contacter pour des collaborations, des projets ou toute question, n'hésitez pas à le faire."
    },
    hi: {
@@ -138,9 +133,8 @@ const translations = {
      publicationsLabel: "प्रमुख प्रकाशन",
      academicProfilesLabel: "शैक्षणिक प्रोफ़ाइल",
      articleCta: "प्रकाशन देखें",
-     pubMoreTitle: "Google Scholar पर और प्रकाशन",
-     pubMoreSub: "उद्धरणों और लेखों का पूरा इतिहास देखें",
-     pubMoreCta: "Google Scholar पर जाएं",
+     qrToggleLabel: "क्यूआर कोड दिखाएं",
+     qrHint: "इस प्रोफ़ाइल को साझा करने के लिए स्कैन करें",
      footerMessage: "मेरे व्यक्तिगत पृष्ठ पर आने के लिए धन्यवाद। यदि आप सहयोग, परियोजनाओं या किसी भी प्रश्न के लिए मुझसे संपर्क करना चाहते हैं, तो कृपया बेझिझक करें।"
    },
    ru: {
@@ -162,9 +156,8 @@ const translations = {
      publicationsLabel: "Избранные публикации",
      academicProfilesLabel: "Академические профили",
      articleCta: "Смотреть публикацию",
-     pubMoreTitle: "Больше публикаций в Google Scholar",
-     pubMoreSub: "Посмотреть полную историю цитирований и статей",
-     pubMoreCta: "Перейти в Google Scholar",
+     qrToggleLabel: "Показать QR-код",
+     qrHint: "Отсканируйте, чтобы поделиться этим профилем",
      footerMessage: "Спасибо за посещение моей личной страницы. Если вы хотите связаться со мной для сотрудничества, проектов или любых вопросов, пожалуйста, не стесняйтесь это сделать."
    },
    pt: {
@@ -186,9 +179,8 @@ const translations = {
      publicationsLabel: "Publicações em destaque",
      academicProfilesLabel: "Perfis acadêmicos",
      articleCta: "Ver publicação",
-     pubMoreTitle: "Mais publicações no Google Scholar",
-     pubMoreSub: "Veja o histórico completo de citações e artigos",
-     pubMoreCta: "Ir para o Google Scholar",
+     qrToggleLabel: "Mostrar código QR",
+     qrHint: "Escaneie para compartilhar este perfil",
      footerMessage: "Obrigado por visitar minha página pessoal. Se você deseja entrar em contato comigo para colaborações, projetos ou qualquer dúvida, fique à vontade para fazê-lo."
    },
    zh: {
@@ -210,9 +202,8 @@ const translations = {
      publicationsLabel: "精选出版物",
      academicProfilesLabel: "学术档案",
      articleCta: "查看出版物",
-     pubMoreTitle: "在 Google Scholar 查看更多出版物",
-     pubMoreSub: "查看完整的引用和文章历史",
-     pubMoreCta: "前往 Google Scholar",
+     qrToggleLabel: "显示二维码",
+     qrHint: "扫描以分享此主页",
      footerMessage: "感谢您访问我的个人页面。如果您想联系我进行合作、项目或任何咨询，请随时与我联系。"
    }
  };
@@ -250,9 +241,9 @@ const translations = {
    document.querySelectorAll('.article-cta-text').forEach(el => {
      el.textContent = translations[lang].articleCta;
    });
-   document.getElementById('pubMoreTitle').textContent = translations[lang].pubMoreTitle;
-   document.getElementById('pubMoreSub').textContent = translations[lang].pubMoreSub;
-   document.getElementById('pubMoreCta').textContent = translations[lang].pubMoreCta;
+
+   document.getElementById('qrToggle').setAttribute('aria-label', translations[lang].qrToggleLabel);
+   document.querySelector('.qr-hint').textContent = translations[lang].qrHint;
 
    document.querySelector('.footer p:first-child').textContent = translations[lang].footerMessage;
    
