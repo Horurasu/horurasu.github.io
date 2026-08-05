@@ -211,15 +211,22 @@ const translations = {
    document.querySelectorAll('.lang-btn').forEach(btn => {
      btn.classList.remove('active');
    });
-   document.querySelector(`.lang-btn[data-lang="${lang}"]`).classList.add('active');
-   
+   const activeBtn = document.querySelector(`.lang-btn[data-lang="${lang}"]`);
+   activeBtn.classList.add('active');
+
+   const toggleFlag = document.getElementById('langToggleFlag');
+   if (toggleFlag) {
+     toggleFlag.src = activeBtn.querySelector('img').src;
+     toggleFlag.alt = activeBtn.getAttribute('title') || '';
+   }
+
    document.querySelector('.profile-description').textContent = translations[lang].profileTitle;
-   
+
    const tagElements = document.querySelectorAll('.tag');
    for (let i = 0; i < tagElements.length && i < translations[lang].tags.length; i++) {
      tagElements[i].textContent = translations[lang].tags[i];
    }
-   
+
    document.querySelector('.social-header h2').innerHTML = `<i class="fas fa-share-alt"></i> ${translations[lang].socialMedia}`;
    document.querySelector('.programming-header h2').innerHTML = `<i class="fas fa-code"></i> ${translations[lang].programming}`;
    document.querySelector('.research-header h2').innerHTML = `<i class="fas fa-flask"></i> ${translations[lang].research}`;
