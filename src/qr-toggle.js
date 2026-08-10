@@ -3,17 +3,12 @@
    var panel = document.getElementById('qrPanel');
    var qrContainer = document.getElementById('qrCode');
 
-   if (!toggleBtn || !panel || !qrContainer) return;
+   if (!panel || !qrContainer) return;
 
    var rendered = false;
+   var desktopQuery = window.matchMedia('(min-width: 1000px)');
 
-   function setOpen(isOpen) {
-      panel.classList.toggle('open', isOpen);
-      toggleBtn.setAttribute('aria-expanded', isOpen);
-   }
-
-   toggleBtn.addEventListener('click', function (e) {
-      e.stopPropagation();
+   function renderQr() {
       if (!rendered) {
          new QRCode(qrContainer, {
             text: 'https://horurasu.github.io/',
@@ -25,13 +20,49 @@
          });
          rendered = true;
       }
+   }
 
+   function setOpen(isOpen) {
+      panel.classList.toggle('open', isOpen);
+      if (toggleBtn) toggleBtn.setAttribute('aria-expanded', isOpen);
+   }
+
+   function toggleQrPanel() {
+      renderQr();
       setOpen(!panel.classList.contains('open'));
-   });
+   }
+
+   window.toggleQrPanel = toggleQrPanel;
+
+   function syncWithViewport() {
+      if (desktopQuery.matches) {
+         renderQr();
+         setOpen(true);
+      } else {
+         setOpen(false);
+      }
+   }
+
+   if (toggleBtn) {
+      toggleBtn.addEventListener('click', function (e) {
+         e.stopPropagation();
+         toggleQrPanel();
+      });
+   }
 
    document.addEventListener('click', function (e) {
-      if (!panel.contains(e.target) && e.target !== toggleBtn) {
+      if (desktopQuery.matches) return;
+      var clickedToggle = toggleBtn && toggleBtn.contains(e.target);
+      if (!panel.contains(e.target) && !clickedToggle) {
          setOpen(false);
       }
    });
+
+   if (desktopQuery.addEventListener) {
+      desktopQuery.addEventListener('change', syncWithViewport);
+   } else if (desktopQuery.addListener) {
+      desktopQuery.addListener(syncWithViewport);
+   }
+
+   syncWithViewport();
 })();

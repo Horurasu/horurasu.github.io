@@ -216,8 +216,20 @@ const translations = {
 
    const toggleFlag = document.getElementById('langToggleFlag');
    if (toggleFlag) {
-     toggleFlag.src = activeBtn.querySelector('img').src;
-     toggleFlag.alt = activeBtn.getAttribute('title') || '';
+     const activeImg = activeBtn.querySelector('img');
+     if (activeImg) {
+       toggleFlag.src = activeImg.src;
+     }
+   }
+
+   const toggleCode = document.getElementById('langToggleCode');
+   if (toggleCode) {
+     toggleCode.textContent = lang.toUpperCase();
+   }
+
+   const langToggle = document.getElementById('langToggle');
+   if (langToggle) {
+     langToggle.setAttribute('aria-label', `Cambiar idioma, idioma actual: ${activeBtn.getAttribute('title') || lang}`);
    }
 
    document.querySelector('.profile-description').textContent = translations[lang].profileTitle;

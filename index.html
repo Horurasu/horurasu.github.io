@@ -63,6 +63,28 @@
    <div class="background"></div>
    <div class="overlay"></div>
 
+   <button class="share-toggle" id="shareToggle" type="button" aria-expanded="false" aria-label="Compartir perfil">
+      <i class="fas fa-share-alt" aria-hidden="true"></i>
+   </button>
+   <div class="share-panel" id="sharePanel">
+      <button class="share-option share-option-qr" type="button" data-share="qr" title="Código QR">
+         <i class="fas fa-qrcode" aria-hidden="true"></i>
+      </button>
+      <button class="share-option" type="button" data-share="whatsapp" title="WhatsApp">
+         <i class="fab fa-whatsapp whatsapp-icon"></i>
+      </button>
+      <button class="share-option" type="button" data-share="facebook" title="Facebook">
+         <i class="fab fa-facebook facebook-icon"></i>
+      </button>
+      <button class="share-option" type="button" data-share="x" title="X / Twitter">
+         <i class="fab fa-twitter twitter-icon"></i>
+      </button>
+      <button class="share-option" type="button" id="shareCopyBtn" title="Copiar enlace">
+         <i class="fas fa-link" aria-hidden="true"></i>
+      </button>
+   </div>
+   <span class="share-toast" id="shareToast">Enlace copiado</span>
+
    <button class="qr-toggle" id="qrToggle" type="button" aria-expanded="false" aria-label="Mostrar código QR">
       <i class="fas fa-qrcode"></i>
    </button>
@@ -71,38 +93,53 @@
       <span class="qr-hint">Escanea para compartir este perfil</span>
    </div>
 
-   <button class="lang-toggle" id="langToggle" type="button" aria-expanded="false" aria-label="Cambiar idioma">
-      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Español" class="lang-toggle-flag" id="langToggleFlag" />
-      <i class="fas fa-globe lang-toggle-badge" aria-hidden="true"></i>
+   <img src="/assets/background/florblanca.png" alt="" class="corner-flower corner-flower--fixed" aria-hidden="true" />
+   <span class="flower-quote flower-quote--fixed" aria-hidden="true">
+      "Glory to mankind."
+      <span class="flower-quote-author">— 2B, YoRHa</span>
+   </span>
+
+   <button class="lang-toggle" id="langToggle" type="button" aria-expanded="false" aria-label="Cambiar idioma, idioma actual: Español">
+      <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="" class="lang-toggle-flag" id="langToggleFlag" onerror="this.style.display='none'" />
+      <span class="lang-toggle-code" id="langToggleCode">ES</span>
    </button>
    <div class="lang-panel" id="langPanel">
       <div class="language-selector" id="languageSelector">
           <button class="lang-btn active" data-lang="es" title="Español">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="Español" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/mx.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">Español</span>
           </button>
           <button class="lang-btn" data-lang="en" title="English">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="English" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">English</span>
           </button>
           <button class="lang-btn" data-lang="ja" title="日本語">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jp.svg" alt="日本語" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/jp.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">日本語</span>
           </button>
           <button class="lang-btn" data-lang="de" title="Deutsch">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/de.svg" alt="Deutsch" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/de.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">Deutsch</span>
           </button>
           <button class="lang-btn" data-lang="fr" title="Français">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/fr.svg" alt="Français" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/fr.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">Français</span>
           </button>
           <button class="lang-btn" data-lang="hi" title="हिन्दी">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/in.svg" alt="हिन्दी" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/in.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">हिन्दी</span>
           </button>
           <button class="lang-btn" data-lang="ru" title="Русский">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ru.svg" alt="Русский" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/ru.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">Русский</span>
           </button>
           <button class="lang-btn" data-lang="pt" title="Português">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="Português" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">Português</span>
           </button>
           <button class="lang-btn" data-lang="zh" title="中文">
-              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cn.svg" alt="中文" />
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/cn.svg" alt="" onerror="this.style.display='none'" />
+              <span class="lang-btn-name">中文</span>
           </button>
       </div>
    </div>
@@ -177,32 +214,6 @@
             <div class="link-text">YouTube</div>
             <div class="link-subtext">@Horurasu</div>
          </div>
-         </a>
-
-         <a>
-         <div class="section-header programming-header">
-            <h2><i class="fas fa-code"></i> Programación</h2>
-         </div>
-         </a>
-
-          <a href="https://github.com/Horurasu" class="link" target="_blank">
-          <div class="link-image">
-            <i class="fab fa-github github-icon"></i>
-          </div>
-          <div>
-            <div class="link-text">Github</div>
-            <div class="link-subtext">@Horurasu</div>
-          </div>
-          </a>
-
-         <a href="https://stackoverflow.com/users/22058015/horurasu" class="link" target="_blank">
-            <div class="link-image">
-               <i class="fab fa-stack-overflow stackoverflow-icon" style="color: #f48024;"></i>
-            </div>
-            <div>
-               <div class="link-text">Stack Overflow</div>
-               <div class="link-subtext">@Horurasu</div>
-            </div>
          </a>
 
          <a>
@@ -292,6 +303,32 @@
                <span class="article-cta"><span class="article-cta-text">Ver publicación</span> <i class="fas fa-external-link-alt"></i></span>
             </a>
          </div>
+
+         <a>
+         <div class="section-header programming-header">
+            <h2><i class="fas fa-code"></i> Programación</h2>
+         </div>
+         </a>
+
+          <a href="https://github.com/Horurasu" class="link" target="_blank">
+          <div class="link-image">
+            <i class="fab fa-github github-icon"></i>
+          </div>
+          <div>
+            <div class="link-text">Github</div>
+            <div class="link-subtext">@Horurasu</div>
+          </div>
+          </a>
+
+         <a href="https://stackoverflow.com/users/22058015/horurasu" class="link" target="_blank">
+            <div class="link-image">
+               <i class="fab fa-stack-overflow stackoverflow-icon"></i>
+            </div>
+            <div>
+               <div class="link-text">Stack Overflow</div>
+               <div class="link-subtext">@Horurasu</div>
+            </div>
+         </a>
       </div>
 
       <div class="seigaiha-divider"></div>
@@ -301,6 +338,9 @@
       <script src="/src/qrcode.min.js"></script>
       <script src="/src/qr-toggle.js"></script>
       <script src="/src/lang-toggle.js"></script>
+      <script src="/src/share-toggle.js"></script>
+      <script src="/src/scroll-reveal.js"></script>
+      <script src="/src/flower-glow.js"></script>
 
 
       <div class="footer">
