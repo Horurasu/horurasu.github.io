@@ -52,7 +52,8 @@
 
    document.addEventListener('click', function (e) {
       if (desktopQuery.matches) return;
-      var clickedToggle = toggleBtn && toggleBtn.contains(e.target);
+      var clickedToggle = (toggleBtn && toggleBtn.contains(e.target)) ||
+         (e.target.closest && e.target.closest('[data-share="qr"]'));
       if (!panel.contains(e.target) && !clickedToggle) {
          setOpen(false);
       }

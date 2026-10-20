@@ -7,7 +7,7 @@
    if (!toggleBtn || !panel) return;
 
    var profileUrl = 'https://horurasu.github.io/';
-   var shareText = 'Martín Joaquín Aguilar Muñoz | Ingeniero en Software';
+   var shareText = 'Martín Joaquín Aguilar Muñoz | Maestro en Innovación en Entornos Virtuales de Enseñanza Aprendizaje (MIEVEA) | Ingeniero en Software';
    var toastTimeout;
 
    var shareLinks = {

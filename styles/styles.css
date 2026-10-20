@@ -774,9 +774,52 @@ body {
    color: #ffffff;
 }
 
-.academia-icon {
+.link-image.academia-icon {
    background-color: #41454A;
    color: #ffffff;
+}
+
+.link-image.umq-icon {
+   background-color: #1F3A68;
+   color: #ffffff;
+}
+
+.link-image.ciite-icon {
+   background-color: #0E7C86;
+   color: #ffffff;
+}
+
+.link-image.tramvet-icon {
+   background-color: #6A3FA0;
+   color: #ffffff;
+}
+
+.link-image.researchmap-icon {
+   background-color: #2E8B57;
+   color: #ffffff;
+}
+
+.link--soon {
+   cursor: default;
+   opacity: 0.75;
+}
+
+.link--soon:hover {
+   background-color: var(--primary-color);
+   transform: none;
+   box-shadow: 0 2px 5px var(--shadow-color);
+   border-left-color: transparent;
+}
+
+.soon-badge {
+   margin-left: auto;
+   padding: 3px 10px;
+   border-radius: 20px;
+   background-color: rgba(47, 141, 255, 0.15);
+   color: #2f6fb0;
+   font-size: 11px;
+   font-weight: bold;
+   white-space: nowrap;
 }
 
 .link-image:has(.twitter-icon) {

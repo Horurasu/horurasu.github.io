@@ -1,6 +1,6 @@
 const translations = {
    es: {
-     profileTitle: "Ingeniero en Software | Estudiante de Maestria en MIEVEA Desarrollador de Tecnologías Inmersivas | Investigador en Tecnologías Inmersivas",
+     profileTitle: "Maestro en Innovación en Entornos Virtuales de Enseñanza Aprendizaje (MIEVEA) | Ingeniero en Software | Desarrollador de Tecnologías Inmersivas | Investigador en Tecnologías Inmersivas",
      tags: ["Desarrollo", "Mundos Virtuales", "Educación", "Investigación", "IA Inmersiva"],
      socialMedia: "Redes Sociales",
      linkedinSubtext: "Perfil profesional",
@@ -17,13 +17,19 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "Publicaciones destacadas",
      academicProfilesLabel: "Perfiles académicos",
+     centersLabel: "Centros y laboratorios de investigación",
+     researchmapSubtext: "Base de datos de investigadores de Japón",
+     tramvetSubtext: "Laboratorio TRAMVET – UPSRJ",
+     comingSoon: "Próximamente",
+     umqResearchSubtext: "Portal de investigación",
+     ciiteSubtext: "Centro de investigación CIITE",
      articleCta: "Ver publicación",
      qrToggleLabel: "Mostrar código QR",
      qrHint: "Escanea para compartir este perfil",
      footerMessage: "Gracias por visitar mi página personal. Si deseas contactarme para colaboraciones, proyectos o cualquier consulta, no dudes en hacerlo."
    },
    en: {
-     profileTitle: "Software Engineer | MIEVEA Master's Student | Immersive Technologies Developer | Immersive Technologies Researcher",
+     profileTitle: "Master's Degree in Innovation in Virtual Teaching and Learning Environments (MIEVEA) | Software Engineer | Immersive Technologies Developer | Immersive Technologies Researcher",
      tags: ["Development", "Virtual Worlds", "Education", "Research", "Immersive AI"],
      socialMedia: "Social Media",
      linkedinSubtext: "Professional profile",
@@ -40,13 +46,19 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "Featured Publications",
      academicProfilesLabel: "Academic Profiles",
+     centersLabel: "Research Centers and Labs",
+     researchmapSubtext: "Japan researcher database",
+     tramvetSubtext: "TRAMVET Laboratory – UPSRJ",
+     comingSoon: "Coming soon",
+     umqResearchSubtext: "Research portal",
+     ciiteSubtext: "CIITE research center",
      articleCta: "View publication",
      qrToggleLabel: "Show QR code",
      qrHint: "Scan to share this profile",
      footerMessage: "Thank you for visiting my personal page. If you would like to contact me for collaborations, projects, or any inquiries, please feel free to do so."
    },
    ja: {
-     profileTitle: "ソフトウェアエンジニア | MIEVEAの修士課程学生 | イマーシブテクノロジー開発者 | イマーシブテクノロジー研究者",
+     profileTitle: "仮想教育・学習環境におけるイノベーション修士（MIEVEA） | ソフトウェアエンジニア | イマーシブテクノロジー開発者 | イマーシブテクノロジー研究者",
      tags: ["開発", "バーチャルワールド", "教育", "研究", "イマーシブAI"],
      socialMedia: "ソーシャルメディア",
      linkedinSubtext: "プロフェッショナルプロフィール",
@@ -63,13 +75,19 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "注目の出版物",
      academicProfilesLabel: "学術プロフィール",
+     centersLabel: "研究センター・研究室",
+     researchmapSubtext: "日本の研究者データベース",
+     tramvetSubtext: "TRAMVET研究室 – UPSRJ",
+     comingSoon: "近日公開",
+     umqResearchSubtext: "研究ポータル",
+     ciiteSubtext: "CIITE研究センター",
      articleCta: "論文を見る",
      qrToggleLabel: "QRコードを表示",
      qrHint: "スキャンしてこのプロフィールを共有",
      footerMessage: "私の個人ページを訪問していただきありがとうございます。コラボレーション、プロジェクト、または質問がある場合は、遠慮なくご連絡ください。"
    },
    de: {
-     profileTitle: "Softwareingenieur | MIEVEA-Masterstudent | Entwickler immersiver Technologien | Forscher für immersive Technologien",
+     profileTitle: "Master in Innovation in virtuellen Lehr- und Lernumgebungen (MIEVEA) | Softwareingenieur | Entwickler immersiver Technologien | Forscher für immersive Technologien",
      tags: ["Entwicklung", "Virtuelle Welten", "Bildung", "Forschung", "Immersive KI"],
      socialMedia: "Soziale Medien",
      linkedinSubtext: "Berufliches Profil",
@@ -86,13 +104,19 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "Ausgewählte Publikationen",
      academicProfilesLabel: "Akademische Profile",
+     centersLabel: "Forschungszentren und Labore",
+     researchmapSubtext: "Japanische Forscherdatenbank",
+     tramvetSubtext: "TRAMVET-Labor – UPSRJ",
+     comingSoon: "Demnächst",
+     umqResearchSubtext: "Forschungsportal",
+     ciiteSubtext: "Forschungszentrum CIITE",
      articleCta: "Publikation ansehen",
      qrToggleLabel: "QR-Code anzeigen",
      qrHint: "Scannen, um dieses Profil zu teilen",
      footerMessage: "Vielen Dank für Ihren Besuch auf meiner persönlichen Seite. Wenn Sie mich wegen Kooperationen, Projekten oder Anfragen kontaktieren möchten, zögern Sie bitte nicht, dies zu tun."
    },
    fr: {
-     profileTitle: "Ingénieur logiciel | Étudiant en Master MIEVEA | Développeur de technologies immersives | Chercheur en technologies immersives",
+     profileTitle: "Master en Innovation dans les Environnements Virtuels d'Enseignement et d'Apprentissage (MIEVEA) | Ingénieur logiciel | Développeur de technologies immersives | Chercheur en technologies immersives",
      tags: ["Développement", "Mondes virtuels", "Éducation", "Recherche", "IA immersive"],
      socialMedia: "Réseaux sociaux",
      linkedinSubtext: "Profil professionnel",
@@ -109,13 +133,19 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "Publications en vedette",
      academicProfilesLabel: "Profils académiques",
+     centersLabel: "Centres et laboratoires de recherche",
+     researchmapSubtext: "Base de données des chercheurs du Japon",
+     tramvetSubtext: "Laboratoire TRAMVET – UPSRJ",
+     comingSoon: "Bientôt",
+     umqResearchSubtext: "Portail de recherche",
+     ciiteSubtext: "Centre de recherche CIITE",
      articleCta: "Voir la publication",
      qrToggleLabel: "Afficher le code QR",
      qrHint: "Scannez pour partager ce profil",
      footerMessage: "Merci de visiter ma page personnelle. Si vous souhaitez me contacter pour des collaborations, des projets ou toute question, n'hésitez pas à le faire."
    },
    hi: {
-     profileTitle: "सॉफ़्टवेयर इंजीनियर | MIEVEA मास्टर छात्र | इमर्सिव टेक्नोलॉजी डेवलपर | इमर्सिव टेक्नोलॉजी शोधकर्ता",
+     profileTitle: "आभासी शिक्षण एवं अधिगम वातावरण में नवाचार में मास्टर (MIEVEA) | सॉफ़्टवेयर इंजीनियर | इमर्सिव टेक्नोलॉजी डेवलपर | इमर्सिव टेक्नोलॉजी शोधकर्ता",
      tags: ["विकास", "आभासी दुनिया", "शिक्षा", "अनुसंधान", "इमर्सिव एआई"],
      socialMedia: "सोशल मीडिया",
      linkedinSubtext: "पेशेवर प्रोफ़ाइल",
@@ -132,13 +162,19 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "प्रमुख प्रकाशन",
      academicProfilesLabel: "शैक्षणिक प्रोफ़ाइल",
+     centersLabel: "अनुसंधान केंद्र और प्रयोगशालाएँ",
+     researchmapSubtext: "जापान शोधकर्ता डेटाबेस",
+     tramvetSubtext: "TRAMVET प्रयोगशाला – UPSRJ",
+     comingSoon: "जल्द आ रहा है",
+     umqResearchSubtext: "अनुसंधान पोर्टल",
+     ciiteSubtext: "CIITE अनुसंधान केंद्र",
      articleCta: "प्रकाशन देखें",
      qrToggleLabel: "क्यूआर कोड दिखाएं",
      qrHint: "इस प्रोफ़ाइल को साझा करने के लिए स्कैन करें",
      footerMessage: "मेरे व्यक्तिगत पृष्ठ पर आने के लिए धन्यवाद। यदि आप सहयोग, परियोजनाओं या किसी भी प्रश्न के लिए मुझसे संपर्क करना चाहते हैं, तो कृपया बेझिझक करें।"
    },
    ru: {
-     profileTitle: "Инженер-программист | Магистрант MIEVEA | Разработчик иммерсивных технологий | Исследователь иммерсивных технологий",
+     profileTitle: "Магистр в области инноваций в виртуальных средах преподавания и обучения (MIEVEA) | Инженер-программист | Разработчик иммерсивных технологий | Исследователь иммерсивных технологий",
      tags: ["Разработка", "Виртуальные миры", "Образование", "Исследования", "Иммерсивный ИИ"],
      socialMedia: "Социальные сети",
      linkedinSubtext: "Профессиональный профиль",
@@ -155,13 +191,19 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "Избранные публикации",
      academicProfilesLabel: "Академические профили",
+     centersLabel: "Исследовательские центры и лаборатории",
+     researchmapSubtext: "База данных исследователей Японии",
+     tramvetSubtext: "Лаборатория TRAMVET – UPSRJ",
+     comingSoon: "Скоро",
+     umqResearchSubtext: "Исследовательский портал",
+     ciiteSubtext: "Исследовательский центр CIITE",
      articleCta: "Смотреть публикацию",
      qrToggleLabel: "Показать QR-код",
      qrHint: "Отсканируйте, чтобы поделиться этим профилем",
      footerMessage: "Спасибо за посещение моей личной страницы. Если вы хотите связаться со мной для сотрудничества, проектов или любых вопросов, пожалуйста, не стесняйтесь это сделать."
    },
    pt: {
-     profileTitle: "Engenheiro de Software | Estudante de Mestrado em MIEVEA | Desenvolvedor de Tecnologias Imersivas | Pesquisador de Tecnologias Imersivas",
+     profileTitle: "Mestre em Inovação em Ambientes Virtuais de Ensino e Aprendizagem (MIEVEA) | Engenheiro de Software | Desenvolvedor de Tecnologias Imersivas | Pesquisador de Tecnologias Imersivas",
      tags: ["Desenvolvimento", "Mundos Virtuais", "Educação", "Pesquisa", "IA Imersiva"],
      socialMedia: "Redes Sociais",
      linkedinSubtext: "Perfil profissional",
@@ -178,13 +220,19 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "Publicações em destaque",
      academicProfilesLabel: "Perfis acadêmicos",
+     centersLabel: "Centros e laboratórios de pesquisa",
+     researchmapSubtext: "Base de dados de pesquisadores do Japão",
+     tramvetSubtext: "Laboratório TRAMVET – UPSRJ",
+     comingSoon: "Em breve",
+     umqResearchSubtext: "Portal de pesquisa",
+     ciiteSubtext: "Centro de pesquisa CIITE",
      articleCta: "Ver publicação",
      qrToggleLabel: "Mostrar código QR",
      qrHint: "Escaneie para compartilhar este perfil",
      footerMessage: "Obrigado por visitar minha página pessoal. Se você deseja entrar em contato comigo para colaborações, projetos ou qualquer dúvida, fique à vontade para fazê-lo."
    },
    zh: {
-     profileTitle: "软件工程师 | MIEVEA 硕士生 | 沉浸式技术开发者 | 沉浸式技术研究员",
+     profileTitle: "虚拟教学与学习环境创新硕士（MIEVEA） | 软件工程师 | 沉浸式技术开发者 | 沉浸式技术研究员",
      tags: ["开发", "虚拟世界", "教育", "研究", "沉浸式人工智能"],
      socialMedia: "社交媒体",
      linkedinSubtext: "专业档案",
@@ -201,6 +249,12 @@ const translations = {
      orcidSubtext: "0009-0003-5618-2261",
      publicationsLabel: "精选出版物",
      academicProfilesLabel: "学术档案",
+     centersLabel: "研究中心与实验室",
+     researchmapSubtext: "日本研究人员数据库",
+     tramvetSubtext: "TRAMVET 实验室 – UPSRJ",
+     comingSoon: "即将推出",
+     umqResearchSubtext: "研究门户",
+     ciiteSubtext: "CIITE 研究中心",
      articleCta: "查看出版物",
      qrToggleLabel: "显示二维码",
      qrHint: "扫描以分享此主页",
@@ -243,20 +297,16 @@ const translations = {
    document.querySelector('.programming-header h2').innerHTML = `<i class="fas fa-code"></i> ${translations[lang].programming}`;
    document.querySelector('.research-header h2').innerHTML = `<i class="fas fa-flask"></i> ${translations[lang].research}`;
    
-   const linkSubtexts = document.querySelectorAll('.link-subtext');
-   linkSubtexts[0].textContent = translations[lang].linkedinSubtext;
-   linkSubtexts[1].textContent = translations[lang].twitterSubtext;
-   linkSubtexts[2].textContent = translations[lang].facebookSubtext;
-   linkSubtexts[3].textContent = translations[lang].youtubeSubtext;
-   linkSubtexts[4].textContent = translations[lang].researchgateSubtext;
-   linkSubtexts[5].textContent = translations[lang].googleScholarSubtext;
-   linkSubtexts[6].textContent = translations[lang].academiaSubtext;
-   linkSubtexts[7].textContent = translations[lang].orcidSubtext;
-   linkSubtexts[8].textContent = translations[lang].githubSubtext;
-   linkSubtexts[9].textContent = translations[lang].stackoverflowSubtext;
+   document.querySelectorAll('.link-subtext[data-i18n]').forEach(el => {
+     el.textContent = translations[lang][el.dataset.i18n];
+   });
 
    document.querySelector('.publications-label-text').textContent = translations[lang].publicationsLabel;
    document.querySelector('.profiles-label-text').textContent = translations[lang].academicProfilesLabel;
+   document.querySelector('.centers-label-text').textContent = translations[lang].centersLabel;
+   document.querySelectorAll('.soon-badge').forEach(el => {
+     el.textContent = translations[lang].comingSoon;
+   });
    document.querySelectorAll('.article-cta-text').forEach(el => {
      el.textContent = translations[lang].articleCta;
    });
